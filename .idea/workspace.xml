@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="complier" targetName="INTERFACE" />
+      <config projectName="complier" targetName="complier_unit" />
+      <config projectName="complier" targetName="scanner_lib" />
+      <config projectName="complier" targetName="main.cpp" />
+      <config projectName="complier" targetName="complier" />
+      <config projectName="complier" targetName="tes_scanner" />
+      <config projectName="complier" targetName="a" />
+      <config projectName="complier" targetName="ab" />
+      <config projectName="complier" targetName="tes" />
+      <config projectName="complier" targetName="tet" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c708424f-b9a2-443b-b847-1b84777a6721" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="complier" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_scanner.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/src/test_scanner.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+              <folding>
+                <element signature="e#332#352#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scanner.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scanner.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1815">
+              <caret line="146" column="8" lean-forward="false" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
+              <folding>
+                <element signature="e#187#204#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Error.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Error.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Error.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Error.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Scnner.cpp" />
+        <option value="$PROJECT_DIR$/Scnner.h" />
+        <option value="$PROJECT_DIR$/Scanner.cpp" />
+        <option value="$PROJECT_DIR$/Scanner.h" />
+        <option value="$PROJECT_DIR$/test/CMakeList.txt" />
+        <option value="$PROJECT_DIR$/src/Error.h" />
+        <option value="$PROJECT_DIR$/src/Error.cpp" />
+        <option value="$PROJECT_DIR$/test/src/catch.hpp" />
+        <option value="$PROJECT_DIR$/test/data/scanner_test1.txt" />
+        <option value="$PROJECT_DIR$/src/Scanner.cpp" />
+        <option value="$PROJECT_DIR$/src/Scanner.h" />
+        <option value="$PROJECT_DIR$/test/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/test/src/test_scanner.cpp" />
+        <option value="$PROJECT_DIR$/../compiler/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/doc/todo.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="complier" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="complier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="complier" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="complier" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="complier" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="complier" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="complier" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="complier" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="complier" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="complier" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="complier" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="complier" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="complier" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="complier" RUN_TARGET_NAME="complier">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="main.cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="main.cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="complier" RUN_TARGET_NAME="main.cpp">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tes" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="tes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="complier" RUN_TARGET_NAME="tes">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="complier_unit" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="complier_unit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="complier" RUN_TARGET_NAME="complier_unit">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tes_scanner" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="tes_scanner" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="complier" RUN_TARGET_NAME="tes_scanner">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="a" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="complier" RUN_TARGET_NAME="a">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tet" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="tet" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="complier" RUN_TARGET_NAME="tet">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="INTERFACE" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="INTERFACE" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ab" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="ab" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="scanner_lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="complier" TARGET_NAME="scanner_lib" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <list size="11">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.complier" />
+      <item index="2" class="java.lang.String" itemvalue="Application.main.cpp" />
+      <item index="3" class="java.lang.String" itemvalue="Application.tes" />
+      <item index="4" class="java.lang.String" itemvalue="Application.complier_unit" />
+      <item index="5" class="java.lang.String" itemvalue="Application.tes_scanner" />
+      <item index="6" class="java.lang.String" itemvalue="Application.a" />
+      <item index="7" class="java.lang.String" itemvalue="Application.tet" />
+      <item index="8" class="java.lang.String" itemvalue="Application.INTERFACE" />
+      <item index="9" class="java.lang.String" itemvalue="Application.ab" />
+      <item index="10" class="java.lang.String" itemvalue="Application.scanner_lib" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c708424f-b9a2-443b-b847-1b84777a6721" name="Default" comment="" />
+      <created>1481013987535</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1481013987535</updated>
+      <workItem from="1481013989774" duration="2576000" />
+      <workItem from="1481016823649" duration="3993000" />
+      <workItem from="1481029388807" duration="5138000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11707000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16203336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33972603" sideWeight="0.49722" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31643835" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33972603" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$USER_HOME$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="79" lean-forward="true" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/test_scanner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#332#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5505">
+          <caret line="367" column="0" lean-forward="false" selection-start-line="367" selection-start-column="0" selection-end-line="367" selection-end-column="0" />
+          <folding>
+            <element signature="e#816#1691#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#187#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Error.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Error.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/test_scanner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#332#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/catch.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#658#687#0" expanded="false" />
+            <element signature="e#820#890#0" expanded="false" />
+            <element signature="e#1520#1707#0" expanded="false" />
+            <element signature="e#1778#1798#0" expanded="false" />
+            <element signature="e#2342#2439#0" expanded="false" />
+            <element signature="e#2673#2691#0" expanded="false" />
+            <element signature="e#4272#4306#0" expanded="false" />
+            <element signature="e#5310#5360#0" expanded="false" />
+            <element signature="e#5469#5582#0" expanded="false" />
+            <element signature="e#5825#6104#0" expanded="false" />
+            <element signature="e#7073#7120#0" expanded="false" />
+            <element signature="e#7178#7226#0" expanded="false" />
+            <element signature="e#7613#7662#0" expanded="false" />
+            <element signature="e#10268#10323#0" expanded="false" />
+            <element signature="e#10505#10568#0" expanded="false" />
+            <element signature="e#10666#10692#0" expanded="false" />
+            <element signature="e#10797#10822#0" expanded="false" />
+            <element signature="e#10946#10993#0" expanded="false" />
+            <element signature="e#11472#11567#0" expanded="false" />
+            <element signature="e#11913#11934#0" expanded="false" />
+            <element signature="e#12201#12233#0" expanded="false" />
+            <element signature="e#14650#14662#0" expanded="false" />
+            <element signature="e#16683#16695#0" expanded="false" />
+            <element signature="e#17982#18004#0" expanded="false" />
+            <element signature="e#18370#18387#0" expanded="false" />
+            <element signature="e#20452#20464#0" expanded="false" />
+            <element signature="e#21478#21490#0" expanded="false" />
+            <element signature="e#23994#25825#0" expanded="false" />
+            <element signature="e#30013#30035#0" expanded="false" />
+            <element signature="e#30073#30095#0" expanded="false" />
+            <element signature="e#30133#30155#0" expanded="false" />
+            <element signature="e#30202#30224#0" expanded="false" />
+            <element signature="e#30868#30909#0" expanded="false" />
+            <element signature="e#31236#31258#0" expanded="false" />
+            <element signature="e#32003#32025#0" expanded="false" />
+            <element signature="e#33679#33701#0" expanded="false" />
+            <element signature="e#35385#35407#0" expanded="false" />
+            <element signature="e#35732#35754#0" expanded="false" />
+            <element signature="e#36079#36101#0" expanded="false" />
+            <element signature="e#40864#40886#0" expanded="false" />
+            <element signature="e#41063#41085#0" expanded="false" />
+            <element signature="e#41379#41401#0" expanded="false" />
+            <element signature="e#41799#41821#0" expanded="false" />
+            <element signature="e#42115#42137#0" expanded="false" />
+            <element signature="e#44262#44274#0" expanded="false" />
+            <element signature="e#45081#45093#0" expanded="false" />
+            <element signature="e#45233#45245#0" expanded="false" />
+            <element signature="e#45390#45405#0" expanded="false" />
+            <element signature="e#45525#45540#0" expanded="false" />
+            <element signature="e#47225#47311#0" expanded="false" />
+            <element signature="e#47604#47617#0" expanded="false" />
+            <element signature="e#47723#47725#0" expanded="false" />
+            <element signature="e#47837#47839#0" expanded="false" />
+            <element signature="e#47951#47953#0" expanded="false" />
+            <element signature="e#48064#48066#0" expanded="false" />
+            <element signature="e#48177#48179#0" expanded="false" />
+            <element signature="e#48291#48293#0" expanded="false" />
+            <element signature="e#48406#48418#0" expanded="false" />
+            <element signature="e#48902#48941#0" expanded="false" />
+            <element signature="e#48986#49012#0" expanded="false" />
+            <element signature="e#49230#49256#0" expanded="false" />
+            <element signature="e#49477#49503#0" expanded="false" />
+            <element signature="e#49721#49747#0" expanded="false" />
+            <element signature="e#49968#49994#0" expanded="false" />
+            <element signature="e#50225#50251#0" expanded="false" />
+            <element signature="e#50480#50519#0" expanded="false" />
+            <element signature="e#50826#50865#0" expanded="false" />
+            <element signature="e#51041#51054#0" expanded="false" />
+            <element signature="e#51205#51218#0" expanded="false" />
+            <element signature="e#51370#51383#0" expanded="false" />
+            <element signature="e#51566#51579#0" expanded="false" />
+            <element signature="e#51732#51745#0" expanded="false" />
+            <element signature="e#51899#51912#0" expanded="false" />
+            <element signature="e#52096#52109#0" expanded="false" />
+            <element signature="e#52260#52273#0" expanded="false" />
+            <element signature="e#52425#52438#0" expanded="false" />
+            <element signature="e#52621#52634#0" expanded="false" />
+            <element signature="e#52787#52800#0" expanded="false" />
+            <element signature="e#52954#52967#0" expanded="false" />
+            <element signature="e#53179#53204#0" expanded="false" />
+            <element signature="e#53354#53379#0" expanded="false" />
+            <element signature="e#53586#53611#0" expanded="false" />
+            <element signature="e#53760#53785#0" expanded="false" />
+            <element signature="e#54006#54019#0" expanded="false" />
+            <element signature="e#54177#54190#0" expanded="false" />
+            <element signature="e#54349#54362#0" expanded="false" />
+            <element signature="e#54526#54539#0" expanded="false" />
+            <element signature="e#54734#54747#0" expanded="false" />
+            <element signature="e#54896#54909#0" expanded="false" />
+            <element signature="e#55059#55072#0" expanded="false" />
+            <element signature="e#55227#55240#0" expanded="false" />
+            <element signature="e#55453#55478#0" expanded="false" />
+            <element signature="e#55633#55658#0" expanded="false" />
+            <element signature="e#55952#55977#0" expanded="false" />
+            <element signature="e#56113#56138#0" expanded="false" />
+            <element signature="e#56376#56396#0" expanded="false" />
+            <element signature="e#56489#56507#0" expanded="false" />
+            <element signature="e#56599#57690#0" expanded="false" />
+            <element signature="e#57872#57884#0" expanded="false" />
+            <element signature="e#58925#59110#0" expanded="false" />
+            <element signature="e#59242#59254#0" expanded="false" />
+            <element signature="e#59565#59577#0" expanded="false" />
+            <element signature="e#59834#59909#0" expanded="false" />
+            <element signature="e#60060#60072#0" expanded="false" />
+            <element signature="e#60377#60385#0" expanded="false" />
+            <element signature="e#60479#60491#0" expanded="false" />
+            <element signature="e#60648#60745#0" expanded="false" />
+            <element signature="e#60781#60783#0" expanded="false" />
+            <element signature="e#60843#60855#0" expanded="false" />
+            <element signature="e#61143#61155#0" expanded="false" />
+            <element signature="e#61341#61353#0" expanded="false" />
+            <element signature="e#61470#61482#0" expanded="false" />
+            <element signature="e#61528#61540#0" expanded="false" />
+            <element signature="e#61740#61764#0" expanded="false" />
+            <element signature="e#62028#62052#0" expanded="false" />
+            <element signature="e#62392#62424#0" expanded="false" />
+            <element signature="e#62656#62793#0" expanded="false" />
+            <element signature="e#63112#63185#0" expanded="false" />
+            <element signature="e#63328#63347#0" expanded="false" />
+            <element signature="e#63764#63776#0" expanded="false" />
+            <element signature="e#64275#64287#0" expanded="false" />
+            <element signature="e#64428#64452#0" expanded="false" />
+            <element signature="e#65065#65077#0" expanded="false" />
+            <element signature="e#65563#65578#0" expanded="false" />
+            <element signature="e#65729#65744#0" expanded="false" />
+            <element signature="e#65898#65913#0" expanded="false" />
+            <element signature="e#66064#66079#0" expanded="false" />
+            <element signature="e#66233#66248#0" expanded="false" />
+            <element signature="e#66409#66424#0" expanded="false" />
+            <element signature="e#67253#67268#0" expanded="false" />
+            <element signature="e#67387#67402#0" expanded="false" />
+            <element signature="e#67521#67536#0" expanded="false" />
+            <element signature="e#67655#67670#0" expanded="false" />
+            <element signature="e#67789#67804#0" expanded="false" />
+            <element signature="e#67924#67939#0" expanded="false" />
+            <element signature="e#68073#68111#0" expanded="false" />
+            <element signature="e#68589#68601#0" expanded="false" />
+            <element signature="e#69941#69953#0" expanded="false" />
+            <element signature="e#71853#71996#0" expanded="false" />
+            <element signature="e#72272#72709#0" expanded="false" />
+            <element signature="e#72742#73012#0" expanded="false" />
+            <element signature="e#77911#78328#0" expanded="false" />
+            <element signature="e#82554#82590#0" expanded="false" />
+            <element signature="e#83621#83816#0" expanded="false" />
+            <element signature="e#83926#83945#0" expanded="false" />
+            <element signature="e#84034#84046#0" expanded="false" />
+            <element signature="e#84230#84242#0" expanded="false" />
+            <element signature="e#84684#84696#0" expanded="false" />
+            <element signature="e#85130#85142#0" expanded="false" />
+            <element signature="e#87582#87594#0" expanded="false" />
+            <element signature="e#87822#87834#0" expanded="false" />
+            <element signature="e#88179#88191#0" expanded="false" />
+            <element signature="e#88579#88591#0" expanded="false" />
+            <element signature="e#89450#89467#0" expanded="false" />
+            <element signature="e#91330#91342#0" expanded="false" />
+            <element signature="e#92160#92172#0" expanded="false" />
+            <element signature="e#93065#93081#0" expanded="false" />
+            <element signature="e#95223#95225#0" expanded="false" />
+            <element signature="e#96318#96330#0" expanded="false" />
+            <element signature="e#98604#98621#0" expanded="false" />
+            <element signature="e#100763#107632#0" expanded="false" />
+            <element signature="e#372683#372709#0" expanded="false" />
+            <element signature="e#372845#378765#0" expanded="false" />
+            <element signature="e#382145#382943#0" expanded="false" />
+            <element signature="e#383646#383832#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4125">
+          <caret line="275" column="0" lean-forward="false" selection-start-line="275" selection-start-column="0" selection-end-line="275" selection-end-column="0" />
+          <folding>
+            <element signature="e#816#1691#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding>
+            <element signature="e#187#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Error.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Error.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Error.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Error.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/catch.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="10483" column="53" lean-forward="true" selection-start-line="10483" selection-start-column="53" selection-end-line="10483" selection-end-column="53" />
+          <folding>
+            <element signature="e#658#687#0" expanded="false" />
+            <element signature="e#820#890#0" expanded="false" />
+            <element signature="e#1520#1707#0" expanded="false" />
+            <element signature="e#1778#1798#0" expanded="false" />
+            <element signature="e#2342#2439#0" expanded="false" />
+            <element signature="e#2673#2691#0" expanded="false" />
+            <element signature="e#4272#4306#0" expanded="false" />
+            <element signature="e#5310#5360#0" expanded="false" />
+            <element signature="e#5469#5582#0" expanded="false" />
+            <element signature="e#5825#6104#0" expanded="false" />
+            <element signature="e#7073#7120#0" expanded="false" />
+            <element signature="e#7178#7226#0" expanded="false" />
+            <element signature="e#7613#7662#0" expanded="false" />
+            <element signature="e#10268#10323#0" expanded="false" />
+            <element signature="e#10505#10568#0" expanded="false" />
+            <element signature="e#10666#10692#0" expanded="false" />
+            <element signature="e#10797#10822#0" expanded="false" />
+            <element signature="e#10946#10993#0" expanded="false" />
+            <element signature="e#11472#11567#0" expanded="false" />
+            <element signature="e#11913#11934#0" expanded="false" />
+            <element signature="e#12201#12233#0" expanded="false" />
+            <element signature="e#14650#14662#0" expanded="false" />
+            <element signature="e#16683#16695#0" expanded="false" />
+            <element signature="e#17982#18004#0" expanded="false" />
+            <element signature="e#18370#18387#0" expanded="false" />
+            <element signature="e#20452#20464#0" expanded="false" />
+            <element signature="e#21478#21490#0" expanded="false" />
+            <element signature="e#23994#25825#0" expanded="false" />
+            <element signature="e#30013#30035#0" expanded="false" />
+            <element signature="e#30073#30095#0" expanded="false" />
+            <element signature="e#30133#30155#0" expanded="false" />
+            <element signature="e#30202#30224#0" expanded="false" />
+            <element signature="e#30868#30909#0" expanded="false" />
+            <element signature="e#31236#31258#0" expanded="false" />
+            <element signature="e#32003#32025#0" expanded="false" />
+            <element signature="e#33679#33701#0" expanded="false" />
+            <element signature="e#35385#35407#0" expanded="false" />
+            <element signature="e#35732#35754#0" expanded="false" />
+            <element signature="e#36079#36101#0" expanded="false" />
+            <element signature="e#40864#40886#0" expanded="false" />
+            <element signature="e#41063#41085#0" expanded="false" />
+            <element signature="e#41379#41401#0" expanded="false" />
+            <element signature="e#41799#41821#0" expanded="false" />
+            <element signature="e#42115#42137#0" expanded="false" />
+            <element signature="e#44262#44274#0" expanded="false" />
+            <element signature="e#45081#45093#0" expanded="false" />
+            <element signature="e#45233#45245#0" expanded="false" />
+            <element signature="e#45390#45405#0" expanded="false" />
+            <element signature="e#45525#45540#0" expanded="false" />
+            <element signature="e#47225#47311#0" expanded="false" />
+            <element signature="e#47604#47617#0" expanded="false" />
+            <element signature="e#47723#47725#0" expanded="false" />
+            <element signature="e#47837#47839#0" expanded="false" />
+            <element signature="e#47951#47953#0" expanded="false" />
+            <element signature="e#48064#48066#0" expanded="false" />
+            <element signature="e#48177#48179#0" expanded="false" />
+            <element signature="e#48291#48293#0" expanded="false" />
+            <element signature="e#48406#48418#0" expanded="false" />
+            <element signature="e#48902#48941#0" expanded="false" />
+            <element signature="e#48986#49012#0" expanded="false" />
+            <element signature="e#49230#49256#0" expanded="false" />
+            <element signature="e#49477#49503#0" expanded="false" />
+            <element signature="e#49721#49747#0" expanded="false" />
+            <element signature="e#49968#49994#0" expanded="false" />
+            <element signature="e#50225#50251#0" expanded="false" />
+            <element signature="e#50480#50519#0" expanded="false" />
+            <element signature="e#50826#50865#0" expanded="false" />
+            <element signature="e#51041#51054#0" expanded="false" />
+            <element signature="e#51205#51218#0" expanded="false" />
+            <element signature="e#51370#51383#0" expanded="false" />
+            <element signature="e#51566#51579#0" expanded="false" />
+            <element signature="e#51732#51745#0" expanded="false" />
+            <element signature="e#51899#51912#0" expanded="false" />
+            <element signature="e#52096#52109#0" expanded="false" />
+            <element signature="e#52260#52273#0" expanded="false" />
+            <element signature="e#52425#52438#0" expanded="false" />
+            <element signature="e#52621#52634#0" expanded="false" />
+            <element signature="e#52787#52800#0" expanded="false" />
+            <element signature="e#52954#52967#0" expanded="false" />
+            <element signature="e#53179#53204#0" expanded="false" />
+            <element signature="e#53354#53379#0" expanded="false" />
+            <element signature="e#53586#53611#0" expanded="false" />
+            <element signature="e#53760#53785#0" expanded="false" />
+            <element signature="e#54006#54019#0" expanded="false" />
+            <element signature="e#54177#54190#0" expanded="false" />
+            <element signature="e#54349#54362#0" expanded="false" />
+            <element signature="e#54526#54539#0" expanded="false" />
+            <element signature="e#54734#54747#0" expanded="false" />
+            <element signature="e#54896#54909#0" expanded="false" />
+            <element signature="e#55059#55072#0" expanded="false" />
+            <element signature="e#55227#55240#0" expanded="false" />
+            <element signature="e#55453#55478#0" expanded="false" />
+            <element signature="e#55633#55658#0" expanded="false" />
+            <element signature="e#55952#55977#0" expanded="false" />
+            <element signature="e#56113#56138#0" expanded="false" />
+            <element signature="e#56376#56396#0" expanded="false" />
+            <element signature="e#56489#56507#0" expanded="false" />
+            <element signature="e#56599#57690#0" expanded="false" />
+            <element signature="e#57872#57884#0" expanded="false" />
+            <element signature="e#58925#59110#0" expanded="false" />
+            <element signature="e#59242#59254#0" expanded="false" />
+            <element signature="e#59565#59577#0" expanded="false" />
+            <element signature="e#59834#59909#0" expanded="false" />
+            <element signature="e#60060#60072#0" expanded="false" />
+            <element signature="e#60377#60385#0" expanded="false" />
+            <element signature="e#60479#60491#0" expanded="false" />
+            <element signature="e#60648#60745#0" expanded="false" />
+            <element signature="e#60781#60783#0" expanded="false" />
+            <element signature="e#60843#60855#0" expanded="false" />
+            <element signature="e#61143#61155#0" expanded="false" />
+            <element signature="e#61341#61353#0" expanded="false" />
+            <element signature="e#61470#61482#0" expanded="false" />
+            <element signature="e#61528#61540#0" expanded="false" />
+            <element signature="e#61740#61764#0" expanded="false" />
+            <element signature="e#62028#62052#0" expanded="false" />
+            <element signature="e#62392#62424#0" expanded="false" />
+            <element signature="e#62656#62793#0" expanded="false" />
+            <element signature="e#63112#63185#0" expanded="false" />
+            <element signature="e#63328#63347#0" expanded="false" />
+            <element signature="e#63764#63776#0" expanded="false" />
+            <element signature="e#64275#64287#0" expanded="false" />
+            <element signature="e#64428#64452#0" expanded="false" />
+            <element signature="e#65065#65077#0" expanded="false" />
+            <element signature="e#65563#65578#0" expanded="false" />
+            <element signature="e#65729#65744#0" expanded="false" />
+            <element signature="e#65898#65913#0" expanded="false" />
+            <element signature="e#66064#66079#0" expanded="false" />
+            <element signature="e#66233#66248#0" expanded="false" />
+            <element signature="e#66409#66424#0" expanded="false" />
+            <element signature="e#67253#67268#0" expanded="false" />
+            <element signature="e#67387#67402#0" expanded="false" />
+            <element signature="e#67521#67536#0" expanded="false" />
+            <element signature="e#67655#67670#0" expanded="false" />
+            <element signature="e#67789#67804#0" expanded="false" />
+            <element signature="e#67924#67939#0" expanded="false" />
+            <element signature="e#68073#68111#0" expanded="false" />
+            <element signature="e#68589#68601#0" expanded="false" />
+            <element signature="e#69941#69953#0" expanded="false" />
+            <element signature="e#71853#71996#0" expanded="false" />
+            <element signature="e#72272#72709#0" expanded="false" />
+            <element signature="e#72742#73012#0" expanded="false" />
+            <element signature="e#77911#78328#0" expanded="false" />
+            <element signature="e#82554#82590#0" expanded="false" />
+            <element signature="e#83621#83816#0" expanded="false" />
+            <element signature="e#83926#83945#0" expanded="false" />
+            <element signature="e#84034#84046#0" expanded="false" />
+            <element signature="e#84230#84242#0" expanded="false" />
+            <element signature="e#84684#84696#0" expanded="false" />
+            <element signature="e#85130#85142#0" expanded="false" />
+            <element signature="e#87582#87594#0" expanded="false" />
+            <element signature="e#87822#87834#0" expanded="false" />
+            <element signature="e#88179#88191#0" expanded="false" />
+            <element signature="e#88579#88591#0" expanded="false" />
+            <element signature="e#89450#89467#0" expanded="false" />
+            <element signature="e#91330#91342#0" expanded="false" />
+            <element signature="e#92160#92172#0" expanded="false" />
+            <element signature="e#93065#93081#0" expanded="false" />
+            <element signature="e#95223#95225#0" expanded="false" />
+            <element signature="e#96318#96330#0" expanded="false" />
+            <element signature="e#98604#98621#0" expanded="false" />
+            <element signature="e#100763#107632#0" expanded="false" />
+            <element signature="e#372683#372709#0" expanded="false" />
+            <element signature="e#372845#378765#0" expanded="false" />
+            <element signature="e#382145#382943#0" expanded="false" />
+            <element signature="e#383646#383832#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/data/scanner_test1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1815">
+          <caret line="146" column="8" lean-forward="false" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
+          <folding>
+            <element signature="e#187#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scanner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="304" column="0" lean-forward="true" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+          <folding>
+            <element signature="e#816#1691#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/todo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/test_scanner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="e#332#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

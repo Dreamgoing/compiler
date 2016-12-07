@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangruoxuan/ClionProjects/complier/src/Error.cpp
+Error.h
+/Users/wangruoxuan/ClionProjects/complier/src/Error.h
+
+/Users/wangruoxuan/ClionProjects/complier/src/Error.h
+iostream
+-
+
+/Users/wangruoxuan/ClionProjects/complier/src/Scanner.cpp
+Scanner.h
+/Users/wangruoxuan/ClionProjects/complier/src/Scanner.h
+
+/Users/wangruoxuan/ClionProjects/complier/src/Scanner.h
+string
+-
+fstream
+-
+deque
+-
+set
+-
+iostream
+-
+cassert
+-
+map
+-
+Error.h
+/Users/wangruoxuan/ClionProjects/complier/src/Error.h
+
