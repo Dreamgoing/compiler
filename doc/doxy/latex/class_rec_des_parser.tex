@@ -1,0 +1,146 @@
+\hypertarget{class_rec_des_parser}{}\section{Rec\+Des\+Parser Class Reference}
+\label{class_rec_des_parser}\index{Rec\+Des\+Parser@{Rec\+Des\+Parser}}
+
+
+{\ttfamily \#include $<$Rec\+Des\+Parser.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_rec_des_parser_a68ff046dddb08a9cb19326c0ef619cf5}{recusive\+Descent\+Parse} (\hyperlink{class_parser}{Parser} \&parser)
+\item 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_ae636ed876dccbbbf0df947162017ee95}{progress} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em Progress \+:\+:= main()$<$statement\+Block$>$ \end{DoxyCompactList}\item 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_a80e51116fe42f872f43c351dba1b50eb}{statement\+Block} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em statement \end{DoxyCompactList}\item 
+\hypertarget{class_rec_des_parser_a2e8faf92b1c011395f75898af8b23390}{}\label{class_rec_des_parser_a2e8faf92b1c011395f75898af8b23390} 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_a2e8faf92b1c011395f75898af8b23390}{statements} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em statements \+:\+:= statement \{ ;$<$statement$>$ \}; \end{DoxyCompactList}\item 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_a4a1fdc2b0e31b91a9e834ad60b396b37}{statement} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em statement \+:\+:= assign\+Statement $\vert$ selection\+Statement $\vert$ loop\+Statement \end{DoxyCompactList}\item 
+\hypertarget{class_rec_des_parser_a4b0ade1ab15495966a47a3445f3dc1da}{}\label{class_rec_des_parser_a4b0ade1ab15495966a47a3445f3dc1da} 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_a4b0ade1ab15495966a47a3445f3dc1da}{assign\+Statement} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em assign\+Statement \+:\+:= ID \textquotesingle{}=\textquotesingle{} $<$expression$>$ \end{DoxyCompactList}\item 
+\hypertarget{class_rec_des_parser_a80ce4d5f25df9d6a9311c0f3cf4b7593}{}\label{class_rec_des_parser_a80ce4d5f25df9d6a9311c0f3cf4b7593} 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_a80ce4d5f25df9d6a9311c0f3cf4b7593}{loop\+Statement} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em loop\+Statement \+:\+:= do\+\_\+while\+Statement $\vert$ while\+Statement $\vert$ for\+Statement \end{DoxyCompactList}\item 
+\hypertarget{class_rec_des_parser_aaccf88eb7d3084be18cbf16dc6ea10ec}{}\label{class_rec_des_parser_aaccf88eb7d3084be18cbf16dc6ea10ec} 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_aaccf88eb7d3084be18cbf16dc6ea10ec}{do\+\_\+while\+Statement} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em do\+\_\+while\+Statement \+:\+:= do $<$statement\+Block$>$ while ( $<$condition$>$ ) \end{DoxyCompactList}\item 
+\hypertarget{class_rec_des_parser_a76b1e2d48e0ffebb6191ad7d57ec5578}{}\label{class_rec_des_parser_a76b1e2d48e0ffebb6191ad7d57ec5578} 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_a76b1e2d48e0ffebb6191ad7d57ec5578}{selection\+Statement} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em selection\+Statement \+:\+:= if ( $<$condition$>$ ) $<$statement\+Block$>$ \mbox{[}else $<$statement\+Block$>$\mbox{]} \end{DoxyCompactList}\item 
+\hypertarget{class_rec_des_parser_a22fc9fb779b81433963a29055c0c26b4}{}\label{class_rec_des_parser_a22fc9fb779b81433963a29055c0c26b4} 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_a22fc9fb779b81433963a29055c0c26b4}{condition} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em condition \+:\+:= $<$expression$>$ $<$relational\+Op$>$ $<$expression$>$ \end{DoxyCompactList}\item 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_a0640caa2edc21da4f7509a2a04c1c132}{expression} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em expression \end{DoxyCompactList}\item 
+\hypertarget{class_rec_des_parser_a68b94dd34dd185a93bd38a099ba61c97}{}\label{class_rec_des_parser_a68b94dd34dd185a93bd38a099ba61c97} 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_a68b94dd34dd185a93bd38a099ba61c97}{term} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em term \+:\+:= $<$factor$>$ \{$\ast$ $<$factor$>$ $\vert$ / $<$factor$>$\} \end{DoxyCompactList}\item 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_ae31030c069102efd0d77aa7c187a142d}{factor} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em factor \+:\+:= ID $\vert$ N\+UM $\vert$ (expression) \end{DoxyCompactList}\item 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ \hyperlink{class_rec_des_parser_ab539a62bb94dce661135cebd96a45711}{num} (\hyperlink{class_parser}{Parser} \&parser)
+\begin{DoxyCompactList}\small\item\em other \end{DoxyCompactList}\item 
+\hypertarget{class_rec_des_parser_ae600e80953535ff51c9c5f8b0608a0f6}{}\label{class_rec_des_parser_ae600e80953535ff51c9c5f8b0608a0f6} 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ {\bfseries id} (\hyperlink{class_parser}{Parser} \&parser)
+\item 
+\hypertarget{class_rec_des_parser_acfe537816711451af568ba5c4fa461cb}{}\label{class_rec_des_parser_acfe537816711451af568ba5c4fa461cb} 
+static \hyperlink{class_tree_node}{Tree\+Node} $\ast$ {\bfseries relational\+Op} (\hyperlink{class_parser}{Parser} \&parser)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]finish recursive descent parser until 12-\/16 night. \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_rec_des_parser_a0640caa2edc21da4f7509a2a04c1c132}{}\label{class_rec_des_parser_a0640caa2edc21da4f7509a2a04c1c132} 
+\index{Rec\+Des\+Parser@{Rec\+Des\+Parser}!expression@{expression}}
+\index{expression@{expression}!Rec\+Des\+Parser@{Rec\+Des\+Parser}}
+\subsubsection{\texorpdfstring{expression()}{expression()}}
+{\footnotesize\ttfamily \hyperlink{class_tree_node}{Tree\+Node} $\ast$ Rec\+Des\+Parser\+::expression (\begin{DoxyParamCaption}\item[{\hyperlink{class_parser}{Parser} \&}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+expression 
+
+expression \+:\+:=  \{+  $\vert$ -\/ \} \hypertarget{class_rec_des_parser_ae31030c069102efd0d77aa7c187a142d}{}\label{class_rec_des_parser_ae31030c069102efd0d77aa7c187a142d} 
+\index{Rec\+Des\+Parser@{Rec\+Des\+Parser}!factor@{factor}}
+\index{factor@{factor}!Rec\+Des\+Parser@{Rec\+Des\+Parser}}
+\subsubsection{\texorpdfstring{factor()}{factor()}}
+{\footnotesize\ttfamily \hyperlink{class_tree_node}{Tree\+Node} $\ast$ Rec\+Des\+Parser\+::factor (\begin{DoxyParamCaption}\item[{\hyperlink{class_parser}{Parser} \&}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+factor \+:\+:= ID $\vert$ N\+UM $\vert$ (expression) 
+
+look ahead one token.
+
+ignore the left parenthesis.
+
+solve syntax error. \hypertarget{class_rec_des_parser_ab539a62bb94dce661135cebd96a45711}{}\label{class_rec_des_parser_ab539a62bb94dce661135cebd96a45711} 
+\index{Rec\+Des\+Parser@{Rec\+Des\+Parser}!num@{num}}
+\index{num@{num}!Rec\+Des\+Parser@{Rec\+Des\+Parser}}
+\subsubsection{\texorpdfstring{num()}{num()}}
+{\footnotesize\ttfamily \hyperlink{class_tree_node}{Tree\+Node} $\ast$ Rec\+Des\+Parser\+::num (\begin{DoxyParamCaption}\item[{\hyperlink{class_parser}{Parser} \&}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+other 
+
+this function may throw exception.
+
+store tmpd or tmpi in node.
+
+rollback and syntax error. \hypertarget{class_rec_des_parser_ae636ed876dccbbbf0df947162017ee95}{}\label{class_rec_des_parser_ae636ed876dccbbbf0df947162017ee95} 
+\index{Rec\+Des\+Parser@{Rec\+Des\+Parser}!progress@{progress}}
+\index{progress@{progress}!Rec\+Des\+Parser@{Rec\+Des\+Parser}}
+\subsubsection{\texorpdfstring{progress()}{progress()}}
+{\footnotesize\ttfamily \hyperlink{class_tree_node}{Tree\+Node} $\ast$ Rec\+Des\+Parser\+::progress (\begin{DoxyParamCaption}\item[{\hyperlink{class_parser}{Parser} \&}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Progress \+:\+:= main()$<$statement\+Block$>$ 
+
+set the node type.
+
+solve the syntax error.
+
+ensure the syntax correct.
+
+solve the syntax error. \hypertarget{class_rec_des_parser_a68ff046dddb08a9cb19326c0ef619cf5}{}\label{class_rec_des_parser_a68ff046dddb08a9cb19326c0ef619cf5} 
+\index{Rec\+Des\+Parser@{Rec\+Des\+Parser}!recusive\+Descent\+Parse@{recusive\+Descent\+Parse}}
+\index{recusive\+Descent\+Parse@{recusive\+Descent\+Parse}!Rec\+Des\+Parser@{Rec\+Des\+Parser}}
+\subsubsection{\texorpdfstring{recusive\+Descent\+Parse()}{recusiveDescentParse()}}
+{\footnotesize\ttfamily void Rec\+Des\+Parser\+::recusive\+Descent\+Parse (\begin{DoxyParamCaption}\item[{\hyperlink{class_parser}{Parser} \&}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+symbol\+: $<$ x $>$ x appear once \{ x \} x appear more than zero \mbox{[} x \mbox{]} x appear once or not appear \hypertarget{class_rec_des_parser_a4a1fdc2b0e31b91a9e834ad60b396b37}{}\label{class_rec_des_parser_a4a1fdc2b0e31b91a9e834ad60b396b37} 
+\index{Rec\+Des\+Parser@{Rec\+Des\+Parser}!statement@{statement}}
+\index{statement@{statement}!Rec\+Des\+Parser@{Rec\+Des\+Parser}}
+\subsubsection{\texorpdfstring{statement()}{statement()}}
+{\footnotesize\ttfamily \hyperlink{class_tree_node}{Tree\+Node} $\ast$ Rec\+Des\+Parser\+::statement (\begin{DoxyParamCaption}\item[{\hyperlink{class_parser}{Parser} \&}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+statement \+:\+:= assign\+Statement $\vert$ selection\+Statement $\vert$ loop\+Statement 
+
+look ahead one token. \hypertarget{class_rec_des_parser_a80e51116fe42f872f43c351dba1b50eb}{}\label{class_rec_des_parser_a80e51116fe42f872f43c351dba1b50eb} 
+\index{Rec\+Des\+Parser@{Rec\+Des\+Parser}!statement\+Block@{statement\+Block}}
+\index{statement\+Block@{statement\+Block}!Rec\+Des\+Parser@{Rec\+Des\+Parser}}
+\subsubsection{\texorpdfstring{statement\+Block()}{statementBlock()}}
+{\footnotesize\ttfamily \hyperlink{class_tree_node}{Tree\+Node} $\ast$ Rec\+Des\+Parser\+::statement\+Block (\begin{DoxyParamCaption}\item[{\hyperlink{class_parser}{Parser} \&}]{parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+statement 
+
+statement\+Block \+:\+:= \textquotesingle{}\{\textquotesingle{} $<$statements$>$ \textquotesingle{}\}\textquotesingle{} ensure the syntax correct.
+
+right parenthesis missing 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Rec\+Des\+Parser.\+h\item 
+src/Rec\+Des\+Parser.\+cpp\end{DoxyCompactItemize}

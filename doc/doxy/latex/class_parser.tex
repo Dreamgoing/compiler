@@ -1,0 +1,178 @@
+\hypertarget{class_parser}{}\section{Parser Class Reference}
+\label{class_parser}\index{Parser@{Parser}}
+
+
+{\ttfamily \#include $<$Parser.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_parser_a25ba9b450cd119541e982cb7c0d64d18}{}\label{class_parser_a25ba9b450cd119541e982cb7c0d64d18} 
+typedef \hyperlink{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5a}{Symbol\+::\+Symbol\+Type} {\bfseries Symtype}
+\item 
+using \hyperlink{class_parser_afff32ed1fe75105bdb39638ab79fbf32}{token\+Type} = \hyperlink{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166}{Scanner\+::\+Token\+Type}
+\item 
+\hypertarget{class_parser_a965c06d2f316b898553d795e8baab9d0}{}\label{class_parser_a965c06d2f316b898553d795e8baab9d0} 
+using {\bfseries Token} = \hyperlink{struct_scanner_1_1_token}{Scanner\+::\+Token}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_parser_a5bf0b31b43b25b002ff36068fd858f09}{}\label{class_parser_a5bf0b31b43b25b002ff36068fd858f09} 
+const map$<$ pair$<$ \hyperlink{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5a}{Symbol\+::\+Symbol\+Type}, \hyperlink{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166}{Scanner\+::\+Token\+Type} $>$, \hyperlink{class_production}{Production} $>$ \& {\bfseries get\+Parser\+Table\+\_\+} () const
+\item 
+\hypertarget{class_parser_ae0884868884dceef40f1779a72c2e1ab}{}\label{class_parser_ae0884868884dceef40f1779a72c2e1ab} 
+void {\bfseries set\+Parser\+Table\+\_\+} (const map$<$ pair$<$ \hyperlink{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5a}{Symbol\+::\+Symbol\+Type}, \hyperlink{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166}{Scanner\+::\+Token\+Type} $>$, \hyperlink{class_production}{Production} $>$ \&parser\+Table\+\_\+)
+\item 
+\hypertarget{class_parser_a3d06871335cd2ad61bcc7a97d969ad5c}{}\label{class_parser_a3d06871335cd2ad61bcc7a97d969ad5c} 
+const \hyperlink{class_a_s_t}{A\+ST} \& {\bfseries get\+Ast\+\_\+} () const
+\item 
+\hypertarget{class_parser_aabf369c39918a49281118055edec57ba}{}\label{class_parser_aabf369c39918a49281118055edec57ba} 
+void {\bfseries set\+Ast\+\_\+} (const \hyperlink{class_a_s_t}{A\+ST} \&ast\+\_\+)
+\item 
+bool \hyperlink{class_parser_a69a4eff828356f0c9cbf94f904ef596f}{predictive\+Parse} ()
+\item 
+void \hyperlink{class_parser_a49977242eb4dcb3ce4909d5ffbe2a813}{init\+Parser\+Table} () noexcept
+\item 
+\hypertarget{class_parser_af24611cf6bd9f345ce8bcc667d2220e8}{}\label{class_parser_af24611cf6bd9f345ce8bcc667d2220e8} 
+void {\bfseries set\+Sourcefile} (const string \&path)
+\item 
+\hyperlink{struct_scanner_1_1_token}{Token} \hyperlink{class_parser_aadd9e6622f688ed2e64c0d9d1343af9c}{next\+Token} ()
+\item 
+void \hyperlink{class_parser_aba97a915de87d7df659a484cf8b196d8}{rollback\+Token} () noexcept(false)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_parser_a2b52de0ab06881c5f9906812aaaca3cb}{Rec\+Des\+Parser}
+\begin{DoxyCompactList}\small\item\em typedef and friend class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]can use friend class to implement \end{DoxyRefDesc}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_parser_afff32ed1fe75105bdb39638ab79fbf32}{}\label{class_parser_afff32ed1fe75105bdb39638ab79fbf32} 
+\index{Parser@{Parser}!token\+Type@{token\+Type}}
+\index{token\+Type@{token\+Type}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{token\+Type}{tokenType}}
+{\footnotesize\ttfamily using \hyperlink{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166}{Parser\+::token\+Type} =  \hyperlink{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166}{Scanner\+::\+Token\+Type}}
+
+\begin{DoxyNote}{Note}
+another way to redefine type just like typedef. 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_parser_a49977242eb4dcb3ce4909d5ffbe2a813}{}\label{class_parser_a49977242eb4dcb3ce4909d5ffbe2a813} 
+\index{Parser@{Parser}!init\+Parser\+Table@{init\+Parser\+Table}}
+\index{init\+Parser\+Table@{init\+Parser\+Table}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{init\+Parser\+Table()}{initParserTable()}}
+{\footnotesize\ttfamily void Parser\+::init\+Parser\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyNote}{Note}
+noexcept equal noexcept(true) this function is declared to not throw any exceptions. 
+\end{DoxyNote}
+\hyperlink{class_parser}{Parser} table.
+
+E -\/ ID -\/$>$TE\textquotesingle{}
+
+E -\/ \textquotesingle{}(\textquotesingle{}-\/$>$TE\textquotesingle{}
+
+E\textquotesingle{} -\/ \textquotesingle{}+\textquotesingle{}$\vert$\textquotesingle{}-\/\textquotesingle{} -\/$>$+\+TE\textquotesingle{} \begin{DoxyNote}{Note}
+A\+DD contains \textquotesingle{}+\textquotesingle{} and \textquotesingle{}-\/\textquotesingle{}
+\end{DoxyNote}
+E\textquotesingle{}-\/ \textquotesingle{})\textquotesingle{}-\/$>$ε and E\textquotesingle{} -\/ \$-\/$>$ε
+
+T -\/ ID -\/$>$FT\textquotesingle{}
+
+T -\/ \textquotesingle{}(\textquotesingle{}-\/$>$FT\textquotesingle{}
+
+T\textquotesingle{} -\/ \textquotesingle{}+\textquotesingle{}$\vert$\textquotesingle{}-\/\textquotesingle{} -\/$>$ε
+
+T\textquotesingle{} -\/ \textquotesingle{}$\ast$\textquotesingle{}$\vert$\textquotesingle{}/\textquotesingle{} -\/$>$$\ast$\+FT\textquotesingle{}
+
+T\textquotesingle{} -\/ \textquotesingle{})\textquotesingle{}-\/$>$ε
+
+T\textquotesingle{} -\/ \$-\/$>$ ε
+
+F -\/ ID -\/$>$ id
+
+F -\/ \textquotesingle{}(\textquotesingle{} -\/$>$ (E)
+
+E -\/\+Num-\/$>$ TE\textquotesingle{}
+
+T-\/\+Num-\/$>$ FT
+
+F -\/\+Num-\/$>$ num; \hypertarget{class_parser_aadd9e6622f688ed2e64c0d9d1343af9c}{}\label{class_parser_aadd9e6622f688ed2e64c0d9d1343af9c} 
+\index{Parser@{Parser}!next\+Token@{next\+Token}}
+\index{next\+Token@{next\+Token}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{next\+Token()}{nextToken()}}
+{\footnotesize\ttfamily \hyperlink{struct_scanner_1_1_token}{Parser\+::\+Token} Parser\+::next\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+local variable
+
+set the max size of lhs\+Buffer\+\_\+ is 10. \hypertarget{class_parser_a69a4eff828356f0c9cbf94f904ef596f}{}\label{class_parser_a69a4eff828356f0c9cbf94f904ef596f} 
+\index{Parser@{Parser}!predictive\+Parse@{predictive\+Parse}}
+\index{predictive\+Parse@{predictive\+Parse}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{predictive\+Parse()}{predictiveParse()}}
+{\footnotesize\ttfamily bool Parser\+::predictive\+Parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]need test predictive\+Parse. \end{DoxyRefDesc}
+predicted outcome
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]solve and output Token,to set symbol\+Type and token\+Type the same only for terminal symbol. \end{DoxyRefDesc}
+
+
+pop now.
+
+now is non-\/terminal
+
+find a grammar,pop now.
+
+push symbols of \hyperlink{class_production}{Production}, last first.
+
+solve error information.
+
+\begin{DoxyNote}{Note}
+syntax\+Error abort 
+\end{DoxyNote}
+\hypertarget{class_parser_aba97a915de87d7df659a484cf8b196d8}{}\label{class_parser_aba97a915de87d7df659a484cf8b196d8} 
+\index{Parser@{Parser}!rollback\+Token@{rollback\+Token}}
+\index{rollback\+Token@{rollback\+Token}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{rollback\+Token()}{rollbackToken()}}
+{\footnotesize\ttfamily void Parser\+::rollback\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyNote}{Note}
+throw an exception. 
+\end{DoxyNote}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_parser_a2b52de0ab06881c5f9906812aaaca3cb}{}\label{class_parser_a2b52de0ab06881c5f9906812aaaca3cb} 
+\index{Parser@{Parser}!Rec\+Des\+Parser@{Rec\+Des\+Parser}}
+\index{Rec\+Des\+Parser@{Rec\+Des\+Parser}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{Rec\+Des\+Parser}{RecDesParser}}
+{\footnotesize\ttfamily friend class \hyperlink{class_rec_des_parser}{Rec\+Des\+Parser}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+typedef and friend class. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]to think the relationship between the \hyperlink{class_parser}{Parser} class and Res\+Des\+Parser class 
+
+learn and use design pattern method. \end{DoxyRefDesc}
+\begin{DoxyNote}{Note}
+friend class provide interface to this class and have access to this class\textquotesingle{}s private member. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Parser.\+h\item 
+src/Parser.\+cpp\end{DoxyCompactItemize}

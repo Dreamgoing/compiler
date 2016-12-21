@@ -1,0 +1,20 @@
+\hypertarget{_e-example}{}\section{E}
+\hyperlink{class_parser}{Parser} class  primary\+\_\+expression -\/ok expression -\/ok multiplicative\+\_\+expression -\/ok additive\+\_\+expression relational\+\_\+expression equality\+\_\+expression assignment\+\_\+expression -\/ok assignment\+\_\+operator $<$=$>$ \textquotesingle{}=\textquotesingle{} multiplicative\+\_\+operator $<$=$>$ \textquotesingle{}$\ast$\textquotesingle{} \textquotesingle{}/\textquotesingle{} additive\+\_\+operator $<$=$>$ \textquotesingle{}+\textquotesingle{} \textquotesingle{}-\/\textquotesingle{}
+
+\begin{DoxyVerb}    expression -> expression + multiplicative_expression | multiplicative_expression
+    multiplicative_expression -> multiplicative_expression  multiplicative_operator primary_expression
+                                 | primary_expression
+    primary_expression -> id | num | (expression)
+
+
+
+    assignment_expression -> primary_expression assignment_operator additive_expression
+\end{DoxyVerb}
+
+
+-\/$>$ TE\textquotesingle{} E -\/$>$ +\+TE\textquotesingle{} $\vert$ ε T -\/$>$ FT\textquotesingle{} T\textquotesingle{}-\/$>$ $\ast$\+FT\textquotesingle{} $\vert$ ε F -\/$>$ (E) $\vert$ id $\vert$ num
+
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 

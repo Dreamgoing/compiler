@@ -1,0 +1,173 @@
+\hypertarget{class_scanner}{}\section{Scanner Class Reference}
+\label{class_scanner}\index{Scanner@{Scanner}}
+
+
+Scanenr class to get token from source file.  
+
+
+
+
+{\ttfamily \#include $<$Scanner.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_scanner_1_1_token}{Token}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166}{Token\+Type} \{ \newline
+{\bfseries E\+N\+D\+O\+F\+F\+I\+LE} = 100, 
+\hyperlink{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a3c7eaa7bbd93e4114909ec587d548f03}{M\+A\+IN} = 1, 
+{\bfseries I\+NT} = 2, 
+{\bfseries F\+L\+O\+AT} = 3, 
+\newline
+{\bfseries D\+O\+U\+B\+LE} = 4, 
+{\bfseries C\+H\+AR} = 5, 
+{\bfseries IF} = 6, 
+{\bfseries E\+L\+SE} = 7, 
+\newline
+{\bfseries DO} = 8, 
+{\bfseries W\+H\+I\+LE} = 9, 
+\hyperlink{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a6cb18bf224cf14b443dde68cc98fa804}{S\+T\+R\+I\+NG} = 10, 
+{\bfseries ID} = 10, 
+\newline
+{\bfseries B\+I\+N\+A\+R\+Y\+\_\+\+N\+U\+M\+B\+ER} = 20, 
+{\bfseries D\+O\+U\+B\+L\+E\+\_\+\+N\+U\+M\+B\+ER} = 20, 
+{\bfseries I\+N\+T\+\_\+\+N\+U\+M\+B\+ER} = 20, 
+\hyperlink{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a92075cf0b9bcb96f062e94a3b84c6c73}{A\+DD} = 22, 
+\newline
+{\bfseries A\+S\+S\+I\+GN} = 21, 
+{\bfseries S\+UB} = 23, 
+{\bfseries M\+U\+LT} = 24, 
+{\bfseries D\+IV} = 25, 
+\newline
+{\bfseries L\+E\+F\+T\+\_\+\+P\+AR} = 26, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+P\+AR} = 27, 
+{\bfseries L\+E\+F\+T\+\_\+\+B\+L\+O\+CK} = 28, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+B\+L\+O\+CK} = 29, 
+\newline
+{\bfseries C\+O\+M\+MA} = 30, 
+{\bfseries S\+E\+M\+I\+C\+O\+L\+ON} = 31, 
+{\bfseries G\+R\+E\+A\+T\+ER} = 32, 
+{\bfseries G\+R\+E\+A\+T\+E\+R\+\_\+\+E\+Q\+U\+AL} = 33, 
+\newline
+{\bfseries S\+M\+A\+L\+L\+ER} = 34, 
+{\bfseries S\+M\+A\+L\+L\+E\+R\+\_\+\+E\+Q\+U\+AL} = 35, 
+{\bfseries E\+Q\+U\+AL} = 36, 
+{\bfseries N\+O\+N\+\_\+\+E\+Q\+U\+AL} = 37, 
+\newline
+{\bfseries H\+A\+S\+H\+\_\+\+M\+A\+RK} = 38, 
+{\bfseries B\+O\+OL} = 39, 
+\hyperlink{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a57fa4cabbebd964ade8ea1ca070ac7b4}{K\+E\+Y\+\_\+\+W\+O\+RD} = 50, 
+{\bfseries S\+Y\+M\+B\+OL} = 51, 
+\newline
+{\bfseries N\+O\+NE} = 52, 
+{\bfseries E\+R\+R\+OR} = 53, 
+{\bfseries E\+N\+D\+\_\+\+M\+A\+RK} = 100
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_scanner_a299d27000feef9ce880a69486d6e67d2}{init\+Key\+Words} ()
+\item 
+\hypertarget{class_scanner_aa984b69f762727024ffa36bc6171c2c2}{}\label{class_scanner_aa984b69f762727024ffa36bc6171c2c2} 
+void {\bfseries init\+Symbols} ()
+\item 
+\hypertarget{class_scanner_a2a0ebb604a33fae2792df2fe8e0f3354}{}\label{class_scanner_a2a0ebb604a33fae2792df2fe8e0f3354} 
+void {\bfseries open\+File} (const string \&filename)
+\item 
+\hypertarget{class_scanner_a3cd96a9a11c56790e5c053129b9bd8ad}{}\label{class_scanner_a3cd96a9a11c56790e5c053129b9bd8ad} 
+void {\bfseries close\+File} ()
+\item 
+\hyperlink{struct_scanner_1_1_token}{Token} \hyperlink{class_scanner_aa0d88db9dafa491ffaf1c0ae92357f20}{next\+Token} ()
+\item 
+\hypertarget{class_scanner_a0742be27da7d62b413b6214f8a8b1621}{}\label{class_scanner_a0742be27da7d62b413b6214f8a8b1621} 
+unsigned int {\bfseries get\+Row} ()
+\item 
+\hypertarget{class_scanner_ac8a97e1e2bd21cf929c99f498842dad5}{}\label{class_scanner_ac8a97e1e2bd21cf929c99f498842dad5} 
+string {\bfseries get\+Line\+Buffer} ()
+\item 
+\hypertarget{class_scanner_a70814f701d44836c2b6e1ca704ce1bb3}{}\label{class_scanner_a70814f701d44836c2b6e1ca704ce1bb3} 
+void {\bfseries reset\+Row} ()
+\item 
+void \hyperlink{class_scanner_a377ef4e058992b4083bd835f30e113aa}{clean\+Up} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_scanner_abef0898a8940e74a01194f3f249641c9}{}\label{class_scanner_abef0898a8940e74a01194f3f249641c9} 
+set$<$ string $>$ {\bfseries key\+Words}
+\item 
+\hypertarget{class_scanner_ae575d45434a167e925691c6fca90805b}{}\label{class_scanner_ae575d45434a167e925691c6fca90805b} 
+set$<$ string $>$ {\bfseries symbols}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Scanenr class to get token from source file. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166}{}\label{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166} 
+\index{Scanner@{Scanner}!Token\+Type@{Token\+Type}}
+\index{Token\+Type@{Token\+Type}!Scanner@{Scanner}}
+\subsubsection{\texorpdfstring{Token\+Type}{TokenType}}
+{\footnotesize\ttfamily enum \hyperlink{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166}{Scanner\+::\+Token\+Type}}
+
+\begin{DoxyNote}{Note}
+explicit define the enum type value. 
+\end{DoxyNote}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+A\+IN@{M\+A\+IN}!Scanner@{Scanner}}\index{Scanner@{Scanner}!M\+A\+IN@{M\+A\+IN}}}\hypertarget{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a3c7eaa7bbd93e4114909ec587d548f03}{}\label{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a3c7eaa7bbd93e4114909ec587d548f03} 
+M\+A\+IN&terminal symbol key word \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+R\+I\+NG@{S\+T\+R\+I\+NG}!Scanner@{Scanner}}\index{Scanner@{Scanner}!S\+T\+R\+I\+NG@{S\+T\+R\+I\+NG}}}\hypertarget{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a6cb18bf224cf14b443dde68cc98fa804}{}\label{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a6cb18bf224cf14b443dde68cc98fa804} 
+S\+T\+R\+I\+NG&variable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+DD@{A\+DD}!Scanner@{Scanner}}\index{Scanner@{Scanner}!A\+DD@{A\+DD}}}\hypertarget{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a92075cf0b9bcb96f062e94a3b84c6c73}{}\label{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a92075cf0b9bcb96f062e94a3b84c6c73} 
+A\+DD&symboL \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K\+E\+Y\+\_\+\+W\+O\+RD@{K\+E\+Y\+\_\+\+W\+O\+RD}!Scanner@{Scanner}}\index{Scanner@{Scanner}!K\+E\+Y\+\_\+\+W\+O\+RD@{K\+E\+Y\+\_\+\+W\+O\+RD}}}\hypertarget{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a57fa4cabbebd964ade8ea1ca070ac7b4}{}\label{class_scanner_a1d588ca5cfd26bdff0e59b437da5b166a57fa4cabbebd964ade8ea1ca070ac7b4} 
+K\+E\+Y\+\_\+\+W\+O\+RD&T\+OP symbol. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_scanner_a377ef4e058992b4083bd835f30e113aa}{}\label{class_scanner_a377ef4e058992b4083bd835f30e113aa} 
+\index{Scanner@{Scanner}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!Scanner@{Scanner}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void Scanner\+::clean\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000007}{Todo}]try to use try catch to solve exception. \end{DoxyRefDesc}
+\hypertarget{class_scanner_a299d27000feef9ce880a69486d6e67d2}{}\label{class_scanner_a299d27000feef9ce880a69486d6e67d2} 
+\index{Scanner@{Scanner}!init\+Key\+Words@{init\+Key\+Words}}
+\index{init\+Key\+Words@{init\+Key\+Words}!Scanner@{Scanner}}
+\subsubsection{\texorpdfstring{init\+Key\+Words()}{initKeyWords()}}
+{\footnotesize\ttfamily void Scanner\+::init\+Key\+Words (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyNote}{Note}
+to use initialize\+\_\+list key\+Words.\+clear(); key\+Words.\+insert(\char`\"{}int\char`\"{}); key\+Words.\+insert(\char`\"{}printf\char`\"{}); key\+Words.\+insert(\char`\"{}void\char`\"{}); key\+Words.\+insert(\char`\"{}if\char`\"{}); key\+Words.\+insert(\char`\"{}else\char`\"{}); key\+Words.\+insert(\char`\"{}else if\char`\"{}); key\+Words.\+insert(\char`\"{}return\char`\"{}); key\+Words.\+insert(\char`\"{}while\char`\"{}); key\+Words.\+insert(\char`\"{}break\char`\"{}); key\+Words.\+insert(\char`\"{}do\char`\"{}); key\+Words.\+insert(\char`\"{}for\char`\"{});
+\end{DoxyNote}
+\hypertarget{class_scanner_aa0d88db9dafa491ffaf1c0ae92357f20}{}\label{class_scanner_aa0d88db9dafa491ffaf1c0ae92357f20} 
+\index{Scanner@{Scanner}!next\+Token@{next\+Token}}
+\index{next\+Token@{next\+Token}!Scanner@{Scanner}}
+\subsubsection{\texorpdfstring{next\+Token()}{nextToken()}}
+{\footnotesize\ttfamily \hyperlink{struct_scanner_1_1_token}{Scanner\+::\+Token} Scanner\+::next\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]conflict with I\+D\+\_\+\+S\+T\+A\+TE \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Scanner.\+h\item 
+src/Scanner.\+cpp\end{DoxyCompactItemize}

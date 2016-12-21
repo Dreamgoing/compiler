@@ -45,6 +45,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/source_lib.dir/DependInfo.cmake"
+  "CMakeFiles/resdesparser_lib.dir/DependInfo.cmake"
+  "CMakeFiles/symbol_lib.dir/DependInfo.cmake"
+  "CMakeFiles/parser_lib.dir/DependInfo.cmake"
+  "CMakeFiles/ast_lib.dir/DependInfo.cmake"
   "CMakeFiles/scanner_lib.dir/DependInfo.cmake"
-  "test/CMakeFiles/complier_unit.dir/DependInfo.cmake"
+  "test/CMakeFiles/test_parser.dir/DependInfo.cmake"
+  "test/CMakeFiles/test_scanner.dir/DependInfo.cmake"
   )

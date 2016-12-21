@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangruoxuan/ClionProjects/complier/src/Symbol.cpp
+Symbol.h
+/Users/wangruoxuan/ClionProjects/complier/src/Symbol.h
+
+/Users/wangruoxuan/ClionProjects/complier/src/Symbol.h
+

@@ -1,0 +1,150 @@
+\hypertarget{class_tree_node}{}\section{Tree\+Node Class Reference}
+\label{class_tree_node}\index{Tree\+Node@{Tree\+Node}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3}{Node\+Type} \{ \newline
+{\bfseries E\+N\+D\+O\+F\+F\+I\+LE} = 100, 
+\hyperlink{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3a8fe6cd5b7bb583a57703ed4083cd55fa}{M\+A\+IN} = 1, 
+{\bfseries I\+NT} = 2, 
+{\bfseries F\+L\+O\+AT} = 3, 
+\newline
+{\bfseries D\+O\+U\+B\+LE} = 4, 
+{\bfseries C\+H\+AR} = 5, 
+{\bfseries IF} = 6, 
+{\bfseries E\+L\+SE} = 7, 
+\newline
+{\bfseries DO} = 8, 
+{\bfseries W\+H\+I\+LE} = 9, 
+\hyperlink{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3a8526948dee4855c6ea6d49dca25b79ff}{S\+T\+R\+I\+NG} = 10, 
+{\bfseries ID} = 10, 
+\newline
+{\bfseries B\+I\+N\+A\+R\+Y\+\_\+\+N\+U\+M\+B\+ER} = 20, 
+{\bfseries D\+O\+U\+B\+L\+E\+\_\+\+N\+U\+M\+B\+ER} = 20, 
+{\bfseries I\+N\+T\+\_\+\+N\+U\+M\+B\+ER} = 20, 
+\hyperlink{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3a8c682e3267299864062c35947b16776f}{A\+DD} = 22, 
+\newline
+{\bfseries A\+S\+S\+I\+GN} = 21, 
+{\bfseries S\+UB} = 23, 
+{\bfseries M\+U\+LT} = 24, 
+{\bfseries D\+IV} = 25, 
+\newline
+{\bfseries L\+E\+F\+T\+\_\+\+P\+AR} = 26, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+P\+AR} = 27, 
+{\bfseries L\+E\+F\+T\+\_\+\+B\+L\+O\+CK} = 28, 
+{\bfseries R\+I\+G\+H\+T\+\_\+\+B\+L\+O\+CK} = 29, 
+\newline
+{\bfseries C\+O\+M\+MA} = 30, 
+{\bfseries S\+E\+M\+I\+C\+O\+L\+ON} = 31, 
+{\bfseries G\+R\+E\+A\+T\+ER} = 32, 
+{\bfseries G\+R\+E\+A\+T\+E\+R\+\_\+\+E\+Q\+U\+AL} = 33, 
+\newline
+{\bfseries S\+M\+A\+L\+L\+ER} = 34, 
+{\bfseries S\+M\+A\+L\+L\+E\+R\+\_\+\+E\+Q\+U\+AL} = 35, 
+{\bfseries E\+Q\+U\+AL} = 36, 
+{\bfseries N\+O\+N\+\_\+\+E\+Q\+U\+AL} = 37, 
+\newline
+{\bfseries H\+A\+S\+H\+\_\+\+M\+A\+RK} = 38, 
+{\bfseries B\+O\+OL} = 39, 
+\hyperlink{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3aefb73e7c0ba3285bb50361872831df9e}{K\+E\+Y\+\_\+\+W\+O\+RD} = 50, 
+{\bfseries S\+Y\+M\+B\+OL} = 51, 
+\newline
+{\bfseries N\+O\+NE} = 52, 
+{\bfseries E\+R\+R\+OR} = 53, 
+{\bfseries E\+N\+D\+\_\+\+M\+A\+RK} = 100, 
+\hyperlink{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3acbe0968aaa30775f92a934bdf318dcf9}{P\+R\+O\+G\+R\+E\+SS}, 
+\newline
+{\bfseries S\+T\+A\+T\+E\+M\+E\+NT}, 
+{\bfseries S\+T\+A\+T\+E\+M\+E\+N\+TS}, 
+{\bfseries S\+T\+A\+T\+E\+M\+E\+N\+T\+\_\+\+B\+L\+O\+CK}, 
+{\bfseries A\+S\+S\+I\+G\+N\+\_\+\+S\+T\+A\+T\+E\+M\+E\+NT}, 
+\newline
+{\bfseries D\+O\+\_\+\+W\+H\+I\+L\+E\+\_\+\+S\+T\+A\+T\+E\+M\+E\+NT}, 
+{\bfseries I\+F\+\_\+\+S\+T\+A\+T\+E\+M\+E\+NT}, 
+{\bfseries E\+L\+S\+E\+\_\+\+S\+T\+A\+T\+E\+M\+E\+NT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::vector$<$ \hyperlink{class_tree_node}{Tree\+Node} $\ast$ $>$ \& \hyperlink{class_tree_node_a8baa49dd046d1365dc85c85f12beda79}{get\+Children\+\_\+} () const
+\begin{DoxyCompactList}\small\item\em Node get\+Children method. \end{DoxyCompactList}\item 
+\hypertarget{class_tree_node_aeff1bea5b97d0127d21c3e852aaff74e}{}\label{class_tree_node_aeff1bea5b97d0127d21c3e852aaff74e} 
+void \hyperlink{class_tree_node_aeff1bea5b97d0127d21c3e852aaff74e}{set\+Children\+\_\+} (const std\+::vector$<$ \hyperlink{class_tree_node}{Tree\+Node} $\ast$$>$ \&children\+\_\+)
+\begin{DoxyCompactList}\small\item\em Node set\+Children method. \end{DoxyCompactList}\item 
+\hypertarget{class_tree_node_a6b1c9937781afd0acae55b610a5c327c}{}\label{class_tree_node_a6b1c9937781afd0acae55b610a5c327c} 
+void {\bfseries add\+Child} (\hyperlink{class_tree_node}{Tree\+Node} $\ast$child)
+\item 
+\hypertarget{class_tree_node_aa8d8232a5c5d23bcfb9ee9ff2515eaad}{}\label{class_tree_node_aa8d8232a5c5d23bcfb9ee9ff2515eaad} 
+void {\bfseries show\+Node} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tree_node_a303725338fb06e7b9af7399e49d0349c}{}\label{class_tree_node_a303725338fb06e7b9af7399e49d0349c} 
+int \hyperlink{class_tree_node_a303725338fb06e7b9af7399e49d0349c}{deep} \{0\}
+\begin{DoxyCompactList}\small\item\em node\textquotesingle{}s level. \end{DoxyCompactList}\item 
+\hypertarget{class_tree_node_a226b9c8f9092850e587a187bca0766f5}{}\label{class_tree_node_a226b9c8f9092850e587a187bca0766f5} 
+bool {\bfseries terminal} \{false\}
+\item 
+\hypertarget{class_tree_node_a0356b323f5d3e9cb2d393d439771af15}{}\label{class_tree_node_a0356b323f5d3e9cb2d393d439771af15} 
+enum \hyperlink{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3}{Tree\+Node\+::\+Node\+Type} {\bfseries kind}
+\item 
+\hypertarget{class_tree_node_a7bb7b4103a78bb399d7ed87c2f406ae3}{}\label{class_tree_node_a7bb7b4103a78bb399d7ed87c2f406ae3} 
+\hyperlink{struct_scanner_1_1_token}{Scanner\+::\+Token} {\bfseries token}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3}{}\label{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3} 
+\index{Tree\+Node@{Tree\+Node}!Node\+Type@{Node\+Type}}
+\index{Node\+Type@{Node\+Type}!Tree\+Node@{Tree\+Node}}
+\subsubsection{\texorpdfstring{Node\+Type}{NodeType}}
+{\footnotesize\ttfamily enum \hyperlink{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3}{Tree\+Node\+::\+Node\+Type}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]how to use c++ union \end{DoxyRefDesc}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+A\+IN@{M\+A\+IN}!Tree\+Node@{Tree\+Node}}\index{Tree\+Node@{Tree\+Node}!M\+A\+IN@{M\+A\+IN}}}\hypertarget{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3a8fe6cd5b7bb583a57703ed4083cd55fa}{}\label{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3a8fe6cd5b7bb583a57703ed4083cd55fa} 
+M\+A\+IN&terminal symbol key word \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+R\+I\+NG@{S\+T\+R\+I\+NG}!Tree\+Node@{Tree\+Node}}\index{Tree\+Node@{Tree\+Node}!S\+T\+R\+I\+NG@{S\+T\+R\+I\+NG}}}\hypertarget{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3a8526948dee4855c6ea6d49dca25b79ff}{}\label{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3a8526948dee4855c6ea6d49dca25b79ff} 
+S\+T\+R\+I\+NG&variable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+DD@{A\+DD}!Tree\+Node@{Tree\+Node}}\index{Tree\+Node@{Tree\+Node}!A\+DD@{A\+DD}}}\hypertarget{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3a8c682e3267299864062c35947b16776f}{}\label{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3a8c682e3267299864062c35947b16776f} 
+A\+DD&symboL \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K\+E\+Y\+\_\+\+W\+O\+RD@{K\+E\+Y\+\_\+\+W\+O\+RD}!Tree\+Node@{Tree\+Node}}\index{Tree\+Node@{Tree\+Node}!K\+E\+Y\+\_\+\+W\+O\+RD@{K\+E\+Y\+\_\+\+W\+O\+RD}}}\hypertarget{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3aefb73e7c0ba3285bb50361872831df9e}{}\label{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3aefb73e7c0ba3285bb50361872831df9e} 
+K\+E\+Y\+\_\+\+W\+O\+RD&T\+OP symbol. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+R\+O\+G\+R\+E\+SS@{P\+R\+O\+G\+R\+E\+SS}!Tree\+Node@{Tree\+Node}}\index{Tree\+Node@{Tree\+Node}!P\+R\+O\+G\+R\+E\+SS@{P\+R\+O\+G\+R\+E\+SS}}}\hypertarget{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3acbe0968aaa30775f92a934bdf318dcf9}{}\label{class_tree_node_a62f65fbb26a3d18a773f8e7f201303b3acbe0968aaa30775f92a934bdf318dcf9} 
+P\+R\+O\+G\+R\+E\+SS&non-\/terminal \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tree_node_a8baa49dd046d1365dc85c85f12beda79}{}\label{class_tree_node_a8baa49dd046d1365dc85c85f12beda79} 
+\index{Tree\+Node@{Tree\+Node}!get\+Children\+\_\+@{get\+Children\+\_\+}}
+\index{get\+Children\+\_\+@{get\+Children\+\_\+}!Tree\+Node@{Tree\+Node}}
+\subsubsection{\texorpdfstring{get\+Children\+\_\+()}{getChildren\_()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \hyperlink{class_tree_node}{Tree\+Node} $\ast$ $>$ \& Tree\+Node\+::get\+Children\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Node get\+Children method. 
+
+\begin{DoxyReturn}{Returns}
+private class member children\+\_\+ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/A\+S\+T.\+h\item 
+src/A\+S\+T.\+cpp\end{DoxyCompactItemize}

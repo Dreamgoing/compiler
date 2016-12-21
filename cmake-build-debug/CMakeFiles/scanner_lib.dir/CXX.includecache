@@ -13,6 +13,8 @@ Error.h
 /Users/wangruoxuan/ClionProjects/complier/src/Error.h
 iostream
 -
+Scanner.h
+/Users/wangruoxuan/ClionProjects/complier/src/Scanner.h
 
 /Users/wangruoxuan/ClionProjects/complier/src/Scanner.cpp
 Scanner.h

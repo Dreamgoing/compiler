@@ -3,6 +3,7 @@
 
 CMakeFiles/scanner_lib.dir/src/Error.cpp.o: ../src/Error.cpp
 CMakeFiles/scanner_lib.dir/src/Error.cpp.o: ../src/Error.h
+CMakeFiles/scanner_lib.dir/src/Error.cpp.o: ../src/Scanner.h
 
 CMakeFiles/scanner_lib.dir/src/Scanner.cpp.o: ../src/Error.h
 CMakeFiles/scanner_lib.dir/src/Scanner.cpp.o: ../src/Scanner.cpp

@@ -201,6 +201,9 @@ ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 //Dependencies for target
 ab_LIB_DEPENDS:STATIC=
 
+//Dependencies for target
+ast_lib_LIB_DEPENDS:STATIC=
+
 //Value Computed by CMake
 compiler_BINARY_DIR:STATIC=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug
 
@@ -217,7 +220,19 @@ complier_LIB_DEPENDS:STATIC=
 complier_SOURCE_DIR:STATIC=/Users/wangruoxuan/ClionProjects/complier
 
 //Dependencies for target
+parser_lib_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+resdesparser_lib_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
 scanner_lib_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+source_lib_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+symbol_lib_LIB_DEPENDS:STATIC=
 
 
 ########################

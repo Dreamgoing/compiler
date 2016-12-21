@@ -5637,7 +5637,7 @@ namespace TestCaseTracking {
                 : CATCH_NULL;
         }
         virtual ITracker& parent() CATCH_OVERRIDE {
-            assert( m_parent ); // Should always be non-null except for root
+            assert( m_parent ); // Should always be non-null except for root_
             return *m_parent;
         }
 
@@ -5789,7 +5789,7 @@ namespace TestCaseTracking {
     };
 
     inline ITracker& TrackerContext::startRun() {
-        m_rootTracker = new SectionTracker( "{root}", *this, CATCH_NULL );
+        m_rootTracker = new SectionTracker( "{root_}", *this, CATCH_NULL );
         m_currentTracker = CATCH_NULL;
         m_runState = Executing;
         return *m_rootTracker;
@@ -7972,7 +7972,7 @@ namespace Catch {
             info.kp_proc.p_flag = 0;
 
             // Initialize mib, which tells sysctl the info we want, in this case
-            // we're looking for information about a specific process ID.
+            // we're looking for information about a specific process id.
 
             mib[0] = CTL_KERN;
             mib[1] = KERN_PROC;
@@ -9460,7 +9460,7 @@ namespace Catch {
                 XmlWriter::ScopedElement e = xml.scopedElement( "testcase" );
                 if( className.empty() ) {
                     xml.writeAttribute( "classname", name );
-                    xml.writeAttribute( "name", "root" );
+                    xml.writeAttribute( "name", "root_" );
                 }
                 else {
                     xml.writeAttribute( "classname", className );

@@ -6,6 +6,7 @@
 #define SEEDCUP_ERROR_H
 
 #include <iostream>
+#include "Scanner.h"
 
 using namespace std;
 /**
@@ -14,10 +15,11 @@ class Error {
 public:
     static void syntaxError();
     static void numberError(const string& error);
-    /*static void syntaxError(const Scanner::Token& token);*/
+    static void syntaxError(const string& tokenName,const int& row);
     static void redeclaration(int row,string type,string name);
     static void typeUndeclaration(int row,string varName);
-
+    static void exceptSyntax(const string& error,const string& exp) noexcept ;
+    static void syntaxError(const string& error);
 
 };
 

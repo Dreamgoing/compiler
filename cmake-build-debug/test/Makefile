@@ -122,19 +122,61 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/complier_unit.dir/rule:
-	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/complier_unit.dir/rule
-.PHONY : test/CMakeFiles/complier_unit.dir/rule
+test/CMakeFiles/test_parser.dir/rule:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_parser.dir/rule
+.PHONY : test/CMakeFiles/test_parser.dir/rule
 
 # Convenience name for target.
-complier_unit: test/CMakeFiles/complier_unit.dir/rule
+test_parser: test/CMakeFiles/test_parser.dir/rule
 
-.PHONY : complier_unit
+.PHONY : test_parser
 
 # fast build rule for target.
-complier_unit/fast:
-	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/complier_unit.dir/build.make test/CMakeFiles/complier_unit.dir/build
-.PHONY : complier_unit/fast
+test_parser/fast:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/build
+.PHONY : test_parser/fast
+
+# Convenience name for target.
+test/CMakeFiles/test_scanner.dir/rule:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_scanner.dir/rule
+.PHONY : test/CMakeFiles/test_scanner.dir/rule
+
+# Convenience name for target.
+test_scanner: test/CMakeFiles/test_scanner.dir/rule
+
+.PHONY : test_scanner
+
+# fast build rule for target.
+test_scanner/fast:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_scanner.dir/build.make test/CMakeFiles/test_scanner.dir/build
+.PHONY : test_scanner/fast
+
+src/test_parser.o: src/test_parser.cpp.o
+
+.PHONY : src/test_parser.o
+
+# target to build an object file
+src/test_parser.cpp.o:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/src/test_parser.cpp.o
+.PHONY : src/test_parser.cpp.o
+
+src/test_parser.i: src/test_parser.cpp.i
+
+.PHONY : src/test_parser.i
+
+# target to preprocess a source file
+src/test_parser.cpp.i:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/src/test_parser.cpp.i
+.PHONY : src/test_parser.cpp.i
+
+src/test_parser.s: src/test_parser.cpp.s
+
+.PHONY : src/test_parser.s
+
+# target to generate assembly for a file
+src/test_parser.cpp.s:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/src/test_parser.cpp.s
+.PHONY : src/test_parser.cpp.s
 
 src/test_scanner.o: src/test_scanner.cpp.o
 
@@ -142,7 +184,7 @@ src/test_scanner.o: src/test_scanner.cpp.o
 
 # target to build an object file
 src/test_scanner.cpp.o:
-	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/complier_unit.dir/build.make test/CMakeFiles/complier_unit.dir/src/test_scanner.cpp.o
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_scanner.dir/build.make test/CMakeFiles/test_scanner.dir/src/test_scanner.cpp.o
 .PHONY : src/test_scanner.cpp.o
 
 src/test_scanner.i: src/test_scanner.cpp.i
@@ -151,7 +193,7 @@ src/test_scanner.i: src/test_scanner.cpp.i
 
 # target to preprocess a source file
 src/test_scanner.cpp.i:
-	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/complier_unit.dir/build.make test/CMakeFiles/complier_unit.dir/src/test_scanner.cpp.i
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_scanner.dir/build.make test/CMakeFiles/test_scanner.dir/src/test_scanner.cpp.i
 .PHONY : src/test_scanner.cpp.i
 
 src/test_scanner.s: src/test_scanner.cpp.s
@@ -160,7 +202,7 @@ src/test_scanner.s: src/test_scanner.cpp.s
 
 # target to generate assembly for a file
 src/test_scanner.cpp.s:
-	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/complier_unit.dir/build.make test/CMakeFiles/complier_unit.dir/src/test_scanner.cpp.s
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_scanner.dir/build.make test/CMakeFiles/test_scanner.dir/src/test_scanner.cpp.s
 .PHONY : src/test_scanner.cpp.s
 
 # Help Target
@@ -172,7 +214,11 @@ help:
 	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... complier_unit"
+	@echo "... test_parser"
+	@echo "... test_scanner"
+	@echo "... src/test_parser.o"
+	@echo "... src/test_parser.i"
+	@echo "... src/test_parser.s"
 	@echo "... src/test_scanner.o"
 	@echo "... src/test_scanner.i"
 	@echo "... src/test_scanner.s"

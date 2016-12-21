@@ -56,16 +56,16 @@ CMAKE_BINARY_DIR = /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : test/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -78,16 +78,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target test
+test/fast: test
 
-.PHONY : rebuild_cache/fast
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,6 +122,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named source_lib
+
+# Build rule for target.
+source_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 source_lib
+.PHONY : source_lib
+
+# fast build rule for target.
+source_lib/fast:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/build
+.PHONY : source_lib/fast
+
+#=============================================================================
+# Target rules for targets named resdesparser_lib
+
+# Build rule for target.
+resdesparser_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 resdesparser_lib
+.PHONY : resdesparser_lib
+
+# fast build rule for target.
+resdesparser_lib/fast:
+	$(MAKE) -f CMakeFiles/resdesparser_lib.dir/build.make CMakeFiles/resdesparser_lib.dir/build
+.PHONY : resdesparser_lib/fast
+
+#=============================================================================
+# Target rules for targets named symbol_lib
+
+# Build rule for target.
+symbol_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 symbol_lib
+.PHONY : symbol_lib
+
+# fast build rule for target.
+symbol_lib/fast:
+	$(MAKE) -f CMakeFiles/symbol_lib.dir/build.make CMakeFiles/symbol_lib.dir/build
+.PHONY : symbol_lib/fast
+
+#=============================================================================
+# Target rules for targets named parser_lib
+
+# Build rule for target.
+parser_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 parser_lib
+.PHONY : parser_lib
+
+# fast build rule for target.
+parser_lib/fast:
+	$(MAKE) -f CMakeFiles/parser_lib.dir/build.make CMakeFiles/parser_lib.dir/build
+.PHONY : parser_lib/fast
+
+#=============================================================================
+# Target rules for targets named ast_lib
+
+# Build rule for target.
+ast_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ast_lib
+.PHONY : ast_lib
+
+# fast build rule for target.
+ast_lib/fast:
+	$(MAKE) -f CMakeFiles/ast_lib.dir/build.make CMakeFiles/ast_lib.dir/build
+.PHONY : ast_lib/fast
+
+#=============================================================================
 # Target rules for targets named scanner_lib
 
 # Build rule for target.
@@ -135,17 +200,60 @@ scanner_lib/fast:
 .PHONY : scanner_lib/fast
 
 #=============================================================================
-# Target rules for targets named complier_unit
+# Target rules for targets named test_parser
 
 # Build rule for target.
-complier_unit: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 complier_unit
-.PHONY : complier_unit
+test_parser: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_parser
+.PHONY : test_parser
 
 # fast build rule for target.
-complier_unit/fast:
-	$(MAKE) -f test/CMakeFiles/complier_unit.dir/build.make test/CMakeFiles/complier_unit.dir/build
-.PHONY : complier_unit/fast
+test_parser/fast:
+	$(MAKE) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/build
+.PHONY : test_parser/fast
+
+#=============================================================================
+# Target rules for targets named test_scanner
+
+# Build rule for target.
+test_scanner: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_scanner
+.PHONY : test_scanner
+
+# fast build rule for target.
+test_scanner/fast:
+	$(MAKE) -f test/CMakeFiles/test_scanner.dir/build.make test/CMakeFiles/test_scanner.dir/build
+.PHONY : test_scanner/fast
+
+src/AST.o: src/AST.cpp.o
+
+.PHONY : src/AST.o
+
+# target to build an object file
+src/AST.cpp.o:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/AST.cpp.o
+	$(MAKE) -f CMakeFiles/ast_lib.dir/build.make CMakeFiles/ast_lib.dir/src/AST.cpp.o
+.PHONY : src/AST.cpp.o
+
+src/AST.i: src/AST.cpp.i
+
+.PHONY : src/AST.i
+
+# target to preprocess a source file
+src/AST.cpp.i:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/AST.cpp.i
+	$(MAKE) -f CMakeFiles/ast_lib.dir/build.make CMakeFiles/ast_lib.dir/src/AST.cpp.i
+.PHONY : src/AST.cpp.i
+
+src/AST.s: src/AST.cpp.s
+
+.PHONY : src/AST.s
+
+# target to generate assembly for a file
+src/AST.cpp.s:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/AST.cpp.s
+	$(MAKE) -f CMakeFiles/ast_lib.dir/build.make CMakeFiles/ast_lib.dir/src/AST.cpp.s
+.PHONY : src/AST.cpp.s
 
 src/Error.o: src/Error.cpp.o
 
@@ -153,6 +261,7 @@ src/Error.o: src/Error.cpp.o
 
 # target to build an object file
 src/Error.cpp.o:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Error.cpp.o
 	$(MAKE) -f CMakeFiles/scanner_lib.dir/build.make CMakeFiles/scanner_lib.dir/src/Error.cpp.o
 .PHONY : src/Error.cpp.o
 
@@ -162,6 +271,7 @@ src/Error.i: src/Error.cpp.i
 
 # target to preprocess a source file
 src/Error.cpp.i:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Error.cpp.i
 	$(MAKE) -f CMakeFiles/scanner_lib.dir/build.make CMakeFiles/scanner_lib.dir/src/Error.cpp.i
 .PHONY : src/Error.cpp.i
 
@@ -171,8 +281,72 @@ src/Error.s: src/Error.cpp.s
 
 # target to generate assembly for a file
 src/Error.cpp.s:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Error.cpp.s
 	$(MAKE) -f CMakeFiles/scanner_lib.dir/build.make CMakeFiles/scanner_lib.dir/src/Error.cpp.s
 .PHONY : src/Error.cpp.s
+
+src/Parser.o: src/Parser.cpp.o
+
+.PHONY : src/Parser.o
+
+# target to build an object file
+src/Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Parser.cpp.o
+	$(MAKE) -f CMakeFiles/parser_lib.dir/build.make CMakeFiles/parser_lib.dir/src/Parser.cpp.o
+.PHONY : src/Parser.cpp.o
+
+src/Parser.i: src/Parser.cpp.i
+
+.PHONY : src/Parser.i
+
+# target to preprocess a source file
+src/Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Parser.cpp.i
+	$(MAKE) -f CMakeFiles/parser_lib.dir/build.make CMakeFiles/parser_lib.dir/src/Parser.cpp.i
+.PHONY : src/Parser.cpp.i
+
+src/Parser.s: src/Parser.cpp.s
+
+.PHONY : src/Parser.s
+
+# target to generate assembly for a file
+src/Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Parser.cpp.s
+	$(MAKE) -f CMakeFiles/parser_lib.dir/build.make CMakeFiles/parser_lib.dir/src/Parser.cpp.s
+.PHONY : src/Parser.cpp.s
+
+src/RecDesParser.o: src/RecDesParser.cpp.o
+
+.PHONY : src/RecDesParser.o
+
+# target to build an object file
+src/RecDesParser.cpp.o:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/RecDesParser.cpp.o
+	$(MAKE) -f CMakeFiles/resdesparser_lib.dir/build.make CMakeFiles/resdesparser_lib.dir/src/RecDesParser.cpp.o
+	$(MAKE) -f CMakeFiles/parser_lib.dir/build.make CMakeFiles/parser_lib.dir/src/RecDesParser.cpp.o
+.PHONY : src/RecDesParser.cpp.o
+
+src/RecDesParser.i: src/RecDesParser.cpp.i
+
+.PHONY : src/RecDesParser.i
+
+# target to preprocess a source file
+src/RecDesParser.cpp.i:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/RecDesParser.cpp.i
+	$(MAKE) -f CMakeFiles/resdesparser_lib.dir/build.make CMakeFiles/resdesparser_lib.dir/src/RecDesParser.cpp.i
+	$(MAKE) -f CMakeFiles/parser_lib.dir/build.make CMakeFiles/parser_lib.dir/src/RecDesParser.cpp.i
+.PHONY : src/RecDesParser.cpp.i
+
+src/RecDesParser.s: src/RecDesParser.cpp.s
+
+.PHONY : src/RecDesParser.s
+
+# target to generate assembly for a file
+src/RecDesParser.cpp.s:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/RecDesParser.cpp.s
+	$(MAKE) -f CMakeFiles/resdesparser_lib.dir/build.make CMakeFiles/resdesparser_lib.dir/src/RecDesParser.cpp.s
+	$(MAKE) -f CMakeFiles/parser_lib.dir/build.make CMakeFiles/parser_lib.dir/src/RecDesParser.cpp.s
+.PHONY : src/RecDesParser.cpp.s
 
 src/Scanner.o: src/Scanner.cpp.o
 
@@ -180,6 +354,7 @@ src/Scanner.o: src/Scanner.cpp.o
 
 # target to build an object file
 src/Scanner.cpp.o:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Scanner.cpp.o
 	$(MAKE) -f CMakeFiles/scanner_lib.dir/build.make CMakeFiles/scanner_lib.dir/src/Scanner.cpp.o
 .PHONY : src/Scanner.cpp.o
 
@@ -189,6 +364,7 @@ src/Scanner.i: src/Scanner.cpp.i
 
 # target to preprocess a source file
 src/Scanner.cpp.i:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Scanner.cpp.i
 	$(MAKE) -f CMakeFiles/scanner_lib.dir/build.make CMakeFiles/scanner_lib.dir/src/Scanner.cpp.i
 .PHONY : src/Scanner.cpp.i
 
@@ -198,8 +374,39 @@ src/Scanner.s: src/Scanner.cpp.s
 
 # target to generate assembly for a file
 src/Scanner.cpp.s:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Scanner.cpp.s
 	$(MAKE) -f CMakeFiles/scanner_lib.dir/build.make CMakeFiles/scanner_lib.dir/src/Scanner.cpp.s
 .PHONY : src/Scanner.cpp.s
+
+src/Symbol.o: src/Symbol.cpp.o
+
+.PHONY : src/Symbol.o
+
+# target to build an object file
+src/Symbol.cpp.o:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Symbol.cpp.o
+	$(MAKE) -f CMakeFiles/symbol_lib.dir/build.make CMakeFiles/symbol_lib.dir/src/Symbol.cpp.o
+.PHONY : src/Symbol.cpp.o
+
+src/Symbol.i: src/Symbol.cpp.i
+
+.PHONY : src/Symbol.i
+
+# target to preprocess a source file
+src/Symbol.cpp.i:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Symbol.cpp.i
+	$(MAKE) -f CMakeFiles/symbol_lib.dir/build.make CMakeFiles/symbol_lib.dir/src/Symbol.cpp.i
+.PHONY : src/Symbol.cpp.i
+
+src/Symbol.s: src/Symbol.cpp.s
+
+.PHONY : src/Symbol.s
+
+# target to generate assembly for a file
+src/Symbol.cpp.s:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Symbol.cpp.s
+	$(MAKE) -f CMakeFiles/symbol_lib.dir/build.make CMakeFiles/symbol_lib.dir/src/Symbol.cpp.s
+.PHONY : src/Symbol.cpp.s
 
 # Help Target
 help:
@@ -207,17 +414,35 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... test"
-	@echo "... edit_cache"
+	@echo "... source_lib"
+	@echo "... resdesparser_lib"
 	@echo "... rebuild_cache"
+	@echo "... symbol_lib"
+	@echo "... parser_lib"
+	@echo "... edit_cache"
+	@echo "... ast_lib"
+	@echo "... test"
 	@echo "... scanner_lib"
-	@echo "... complier_unit"
+	@echo "... test_parser"
+	@echo "... test_scanner"
+	@echo "... src/AST.o"
+	@echo "... src/AST.i"
+	@echo "... src/AST.s"
 	@echo "... src/Error.o"
 	@echo "... src/Error.i"
 	@echo "... src/Error.s"
+	@echo "... src/Parser.o"
+	@echo "... src/Parser.i"
+	@echo "... src/Parser.s"
+	@echo "... src/RecDesParser.o"
+	@echo "... src/RecDesParser.i"
+	@echo "... src/RecDesParser.s"
 	@echo "... src/Scanner.o"
 	@echo "... src/Scanner.i"
 	@echo "... src/Scanner.s"
+	@echo "... src/Symbol.o"
+	@echo "... src/Symbol.i"
+	@echo "... src/Symbol.s"
 .PHONY : help
 
 

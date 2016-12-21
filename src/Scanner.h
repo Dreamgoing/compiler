@@ -22,11 +22,10 @@
 #include <map>
 #include "Error.h"
 
-
-
 using namespace std;
 
 
+///@brief Scanenr class to get token from source file.
 class Scanner {
 private:
     const static unsigned INFROW = 0x3f3f3f3f;
@@ -50,28 +49,34 @@ private:
 public:
     set<string> keyWords;
     set<string> symbols;
+    ///@note explicit define the enum type value.
     enum TokenType {
-        KEY_WORD,
-        ID,
 
-        BOOL,
 
-        SYMBOL,
-        NONE,
-        ERROR,
-        ENDOFFILE,
-        MAIN = 1,
+        ENDOFFILE = 100,
+
+        ///@brief terminal symbol
+
+        ///key word
+                MAIN = 1,
         INT = 2,
         FLOAT = 3,
-        DOUBLE = 20,
+        DOUBLE = 4,
         CHAR = 5,
         IF = 6,
         ELSE = 7,
         DO = 8,
         WHILE = 9,
-        STRING = 10,
-        BINARY_NUMBER = 4,
-        ADD = 22,
+
+        ///variable
+                STRING = 10,
+        ID = 10,
+        BINARY_NUMBER = 20,
+        DOUBLE_NUMBER = 20,
+        INT_NUMBER = 20,
+
+        ///symboL
+                ADD = 22,
         ASSIGN = 21,
         SUB = 23,
         MULT = 24,
@@ -88,7 +93,16 @@ public:
         SMALLER_EQUAL = 35,
         EQUAL = 36,
         NON_EQUAL = 37,
-        HASH_MARK = 38
+        HASH_MARK = 38,
+        BOOL = 39,
+
+        ///@brief TOP symbol
+                KEY_WORD = 50,
+        SYMBOL = 51,
+        NONE = 52,
+        ERROR = 53,
+        END_MARK = 100
+
         ///@todo ( +|-|ε ) dd*(.dd* | ε)( e ( +|-|ε ) dd*|ε)
     };
 
@@ -102,6 +116,10 @@ public:
             lexeme.clear();
             row = INFROW;
         }
+
+        bool empty() {
+            return kind == NONE && lexeme.empty();;
+        }
     };
 
     void initKeyWords();
@@ -114,7 +132,7 @@ private:
     unsigned int row; //当前的行号
     ifstream fin;
     Token pre;
-    map<string,TokenType > keyMap;
+    map<string, TokenType> keyMap;
 
 private:
 
@@ -128,7 +146,9 @@ private:
 
     void setTokenType(Token &rhs, TokenType nowType, unsigned int nowRow, unsigned int nowPos);
 
-    void setTokenType(Token &rhs);
+    void fixTokenType(Token &rhs);
+
+
 public:
     Scanner();
 

@@ -1,0 +1,106 @@
+\hypertarget{class_symbol}{}\section{Symbol Class Reference}
+\label{class_symbol}\index{Symbol@{Symbol}}
+
+
+\hyperlink{class_symbol}{Symbol} class\textquotesingle{}s one \hyperlink{class_symbol}{Symbol}\textquotesingle{}s type is terminal symbol, other\textquotesingle{}s is non-\/terminal.  
+
+
+
+
+{\ttfamily \#include $<$Symbol.\+h$>$}
+
+Inheritance diagram for Symbol\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symbol}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5a}{Symbol\+Type} \{ \newline
+{\bfseries primary\+\_\+expression}, 
+\hyperlink{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5aa8661510d8a27e67fc96161d1c67289bd}{expression}, 
+{\bfseries expression\+\_\+}, 
+{\bfseries multiplicative\+\_\+expression}, 
+\newline
+{\bfseries multiplicative\+\_\+expression\+\_\+}, 
+{\bfseries additive\+\_\+expression}, 
+{\bfseries relational\+\_\+expression}, 
+{\bfseries equality\+\_\+expression}, 
+\newline
+{\bfseries assignment\+\_\+expression}, 
+\hyperlink{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5aa3db3ca894c8b0c7c2a94e4bef890032b}{additive\+\_\+operator} = 22, 
+{\bfseries multiplicative\+\_\+operator} = 24, 
+{\bfseries assignment\+\_\+operator} = 21, 
+\newline
+{\bfseries terminal\+\_\+id} = 10, 
+{\bfseries terminal\+\_\+num} = 20, 
+{\bfseries terminal\+\_\+double} = 20, 
+{\bfseries terminal\+\_\+add} = 22, 
+\newline
+{\bfseries terminal\+\_\+sub} = 23, 
+{\bfseries terminal\+\_\+mult} = 24, 
+{\bfseries terminal\+\_\+div} = 25, 
+{\bfseries terminal\+\_\+leftpar} = 26, 
+\newline
+{\bfseries terminal\+\_\+rightpar} = 27, 
+{\bfseries terminal\+\_\+leftblock} = 28, 
+{\bfseries terminal\+\_\+rightblock} = 29, 
+{\bfseries terminal\+\_\+comma} = 30, 
+\newline
+{\bfseries terminal\+\_\+semincolon} = 31, 
+{\bfseries terminal\+\_\+greater} = 32, 
+{\bfseries terminal\+\_\+end} = 100, 
+{\bfseries terminal\+\_\+ε}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_symbol_aaea83d504a1096a6452d4da0d22a6cf2}{}\label{class_symbol_aaea83d504a1096a6452d4da0d22a6cf2} 
+{\bfseries Symbol} (bool is\+Terminal)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_symbol_a9a898baa9dd070590594f294335d9125}{}\label{class_symbol_a9a898baa9dd070590594f294335d9125} 
+static bool {\bfseries isterminal} (\hyperlink{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5a}{Symbol\+Type} type)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_symbol_a7911a477f0959199fd61fb6a37fb5397}{}\label{class_symbol_a7911a477f0959199fd61fb6a37fb5397} 
+bool {\bfseries is\+Terminal}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_symbol}{Symbol} class\textquotesingle{}s one \hyperlink{class_symbol}{Symbol}\textquotesingle{}s type is terminal symbol, other\textquotesingle{}s is non-\/terminal. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5a}{}\label{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5a} 
+\index{Symbol@{Symbol}!Symbol\+Type@{Symbol\+Type}}
+\index{Symbol\+Type@{Symbol\+Type}!Symbol@{Symbol}}
+\subsubsection{\texorpdfstring{Symbol\+Type}{SymbolType}}
+{\footnotesize\ttfamily enum \hyperlink{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5a}{Symbol\+::\+Symbol\+Type}}
+
+\begin{DoxyNote}{Note}
+the enum type value can\textquotesingle{}t the same. 
+\end{DoxyNote}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{expression@{expression}!Symbol@{Symbol}}\index{Symbol@{Symbol}!expression@{expression}}}\hypertarget{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5aa8661510d8a27e67fc96161d1c67289bd}{}\label{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5aa8661510d8a27e67fc96161d1c67289bd} 
+expression&-\/-\/---0 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{additive\+\_\+operator@{additive\+\_\+operator}!Symbol@{Symbol}}\index{Symbol@{Symbol}!additive\+\_\+operator@{additive\+\_\+operator}}}\hypertarget{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5aa3db3ca894c8b0c7c2a94e4bef890032b}{}\label{class_symbol_a7ee37d4cfcb980f4eddf7ed1a028da5aa3db3ca894c8b0c7c2a94e4bef890032b} 
+additive\+\_\+operator&-\/---8 Non-\/terminal symbol limit. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Symbol.\+h\item 
+src/Symbol.\+cpp\end{DoxyCompactItemize}

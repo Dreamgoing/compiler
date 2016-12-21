@@ -8,12 +8,7 @@ void Error::syntaxError() {
     cerr<<"Error: syntax error!"<<endl;
 }
 
-/*void Error::syntaxError(const Scanner::Token &token) {
-    if(token.lexeme.empty()){
-        return;
-    }
-    cerr<<"Error: syntax error! in "<<token.row<<" row "<<token.lexeme<<endl;
-}*/
+
 
 void Error::redeclaration(int row, string type, string name) {
     cerr<<"Error: in line "<<row<<" : redeclaration of '"<<type<<" "<<name<<"'"<<endl;
@@ -25,5 +20,17 @@ void Error::typeUndeclaration(int row, string varName) {
 }
 
 void Error::numberError(const string &error) {
+    cerr<<"Error: "<<error<<endl;
+}
+
+void Error::syntaxError(const string &tokenName, const int &row) {
+    cerr<<"Error: syntax error! in "<<row<<" row ,"<<tokenName<<endl;
+}
+
+void Error::exceptSyntax(const string& error,const string &exp) noexcept {
+    cerr<<"Error: in "<<error<<". Syntax Error ! except "<<exp<<endl;
+}
+
+void Error::syntaxError(const string &error) {
     cerr<<"Error: "<<error<<endl;
 }

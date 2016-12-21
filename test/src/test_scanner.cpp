@@ -5,8 +5,10 @@
 //#define CATCH_CONFIG_MAIN before the #include "catch.hpp" in exactly one source file.
 #define CATCH_CONFIG_MAIN //This tells Catch to provide a main() - only do this in one cpp file
 
+#define SHOW_SCANNER_RESULT
+
 /**
- * @brief Scanner Unit_test file.re
+ * @brief Scanner Unit_test source
  * @todo set the executable file path under current directory.
  * */
 
@@ -37,6 +39,9 @@ TEST_CASE("Scanner unit_test ","[Scanner]"){
         CHECK(scanner.nextToken().lexeme=="+");
         CHECK(scanner.nextToken().lexeme=="+49");
 
+
+
+
         ////@brief the second line.
         CHECK(scanner.nextToken().lexeme=="(");
         CHECK(scanner.nextToken().lexeme=="+123.456");
@@ -54,6 +59,21 @@ TEST_CASE("Scanner unit_test ","[Scanner]"){
         CHECK(scanner.nextToken().lexeme=="*");
         CHECK(scanner.nextToken().lexeme=="-");
         CHECK(scanner.nextToken().lexeme=="c123");
+        CHECK(scanner.nextToken().kind==Scanner::TokenType::ENDOFFILE);
+
+#ifdef SHOW_SCANNER_RESULT
+        scanner.cleanUp();
+        scanner.openFile("../../test/data/scanner_test1.txt");
+        while (true){
+            Scanner::Token token = scanner.nextToken();
+            if(token.kind==Scanner::TokenType::ENDOFFILE){
+                break;
+            } else{
+                cout<<"( "<<token.lexeme<<" ,"<<token.kind<<" )"<<endl;
+            }
+        }
+
+#endif
 
     }
     SECTION("Notes_test scanner_test2.txt"){

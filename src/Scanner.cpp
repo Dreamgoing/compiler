@@ -34,7 +34,8 @@ void Scanner::initKeyWords() {
                 {"while"},
                 {"break"},
                 {"do"},
-                {"for"}
+                {"for"},
+                {"main"}
     };
 }
 
@@ -185,14 +186,15 @@ Scanner::Token Scanner::nextToken() {
                 } else if (isdigit(nowChar)) { //处理整型数字
                     nowState = INT_STATE;
                     resToken.lexeme += nowChar;
-                    setTokenType(resToken, INT, row, bufferPos);
+                    setTokenType(resToken, INT_NUMBER, row, bufferPos);
                 } else if (symbols.find({nowChar}) != symbols.end()) {//处理符号
 
                     nowState = SYMBOL_STATE;
                     resToken.lexeme += nowChar;
                     setTokenType(resToken, SYMBOL, row, bufferPos);
 
-                } else if (nowChar == '"') {                          //处理字符串
+                } else if (nowChar == '"') {//处理字符串
+                    ///@bug conflict with ID_STATE
                     nowState = STRING_STATE;
                     setTokenType(resToken, STRING, row, bufferPos);
                 } else if (nowChar == '\'') {                         //处理单个字符
@@ -213,6 +215,7 @@ Scanner::Token Scanner::nextToken() {
                     rollBack();
                     if (searchReserved(resToken.lexeme) == KEY_WORD) {
                         resToken.kind = KEY_WORD;
+                        fixTokenType(resToken);
                         //cout<<resToken.lexeme<<" --"<<endl;
                     } else {
                         resToken.kind = ID;
@@ -222,13 +225,14 @@ Scanner::Token Scanner::nextToken() {
             case INT_STATE:
                 if (isdigit(nowChar)) {
                     resToken.lexeme += nowChar;
-                } else if(nowChar=='.'||nowChar=='e'){
+                    resToken.kind = INT_NUMBER;
+                } else if (nowChar == '.' || nowChar == 'e') {
                     rollBack();
                     //resToken.lexeme += nowChar;
                     nowState = DOUBLE_STATE;
                 } else {
                     rollBack();
-                    resToken.kind = Scanner::INT;
+                    resToken.kind = Scanner::INT_NUMBER;
                     nowState = DONE_STATE;
                 }
                 break;
@@ -268,35 +272,35 @@ Scanner::Token Scanner::nextToken() {
                 break;
                 //
             case DOUBLE_STATE:
-                setTokenType(resToken, DOUBLE, row, bufferPos);
-                if(nowChar=='.'){
-                    resToken.lexeme+=nowChar;
+                setTokenType(resToken, DOUBLE_NUMBER, row, bufferPos);
+                if (nowChar == '.') {
+                    resToken.lexeme += nowChar;
                     nowChar = nextChar();
-                    if(!isdigit(nowChar)){
+                    if (!isdigit(nowChar)) {
                         Error::numberError("number format error");
                     }
-                    while (isdigit(nowChar)){
-                        resToken.lexeme +=nowChar;
+                    while (isdigit(nowChar)) {
+                        resToken.lexeme += nowChar;
                         nowChar = nextChar();
                     }
                 }
                 // cerr<<" now "<<nowChar<<" "<<resToken.lexeme<<endl;
-                if(nowChar=='e'){
-                    resToken.lexeme+=nowChar;
+                if (nowChar == 'e') {
+                    resToken.lexeme += nowChar;
                     nowChar = nextChar();
-                    if(nowChar=='+'||nowChar=='-'){
-                        resToken.lexeme+=nowChar;
+                    if (nowChar == '+' || nowChar == '-') {
+                        resToken.lexeme += nowChar;
                         nowChar = nextChar();
                     }
-                    if(!isdigit(nowChar)){
+                    if (!isdigit(nowChar)) {
                         Error::numberError("number format error");
                     }
-                    while (isdigit(nowChar)){
-                        resToken.lexeme +=nowChar;
+                    while (isdigit(nowChar)) {
+                        resToken.lexeme += nowChar;
                         nowChar = nextChar();
                     }
                     rollBack();
-                } else{
+                } else {
                     //cout<<"ok"<<endl;
                     rollBack();
                 }
@@ -311,10 +315,10 @@ Scanner::Token Scanner::nextToken() {
                         resToken.lexeme += nowChar;
                         nowState = DONE_STATE;
                     }
-                } else if (nowChar == '/'&&pre == "/") {
+                } else if (nowChar == '/' && pre == "/") {
                     nowState = LINE_COMMENT_STATE;
                     resToken.lexeme += nowChar;
-                } else if (nowChar == '*'&&pre == "/") {
+                } else if (nowChar == '*' && pre == "/") {
                     nowState = BLOCK_COMMENT_STATE;
                     resToken.lexeme += nowChar;
                 } else if (nowChar == '|' && pre == "|") {
@@ -323,19 +327,20 @@ Scanner::Token Scanner::nextToken() {
                 } else if (nowChar == '&' && pre == "&") {
                     nowState = DONE_STATE;
                     resToken.lexeme += nowChar;
-                } else if(pre=="+"||pre=="-"){
-                    if(isdigit(nowChar)){
+                } else if (pre == "+" || pre == "-") {
+                    if (isdigit(nowChar)) {
                         //cout<<tmp<<endl;
                         rollBack();
                         nowState = INT_STATE;
-                    } else{
+                    } else {
                         rollBack();
                         nowState = DONE_STATE;
                     }
-                } else{
+                } else {
                     rollBack();
                     nowState = DONE_STATE;
                 }
+                fixTokenType(resToken);
                 break;
                 /*@delete
                  * else if (nowChar == '+' && pre == "+") {
@@ -352,6 +357,7 @@ Scanner::Token Scanner::nextToken() {
         }
     }
     //cerr<<lineBuffer<<" "<<resToken.lexeme<<endl;
+    fixTokenType(resToken);
     return resToken;
 }
 
@@ -374,45 +380,38 @@ string Scanner::getLineBuffer() {
     return lineBuffer;
 }
 
-void Scanner::setTokenType(Scanner::Token &rhs) {
-    switch (rhs.kind){
-        case SYMBOL:
-
-            break;
-    }
-}
 
 void Scanner::initKeyMap() {
     keyMap = {
-            {"main",MAIN},
-            {"int",INT},
-            {"float",FLOAT},
-            {"double",DOUBLE},
-            {"char",CHAR},
-            {"if",IF},
-            {"else",ELSE},
-            {"do",DO},
-            {"while",WHILE},
-            {"l(l|d)*",STRING},
-            {"( +|-|ε ) dd*(.dd* | ε)( e ( +|-|ε ) dd*|ε) ",BINARY_NUMBER},
-            {"=",ASSIGN},
-            {"+",ADD},
-            {"-",SUB},
-            {"*",MULT},
-            {"/",DIV},
-            {"(",LEFT_PAR},
-            {")",RIGHT_BLOCK},
-            {"{",LEFT_BLOCK},
-            {"}",RIGHT_BLOCK},
-            {",",COMMA},
-            {";",SEMICOLON},
-            {">",GREATER},
-            {">=",GREATER_EQUAL},
-            {"<",SMALLER},
-            {"<=",SMALLER_EQUAL},
-            {"==",EQUAL},
-            {"!=",NON_EQUAL},
-            {"#",HASH_MARK}
+            {"main",                                         MAIN},
+            {"int",                                          INT},
+            {"float",                                        FLOAT},
+            {"double",                                       DOUBLE},
+            {"char",                                         CHAR},
+            {"if",                                           IF},
+            {"else",                                         ELSE},
+            {"do",                                           DO},
+            {"while",                                        WHILE},
+            {"l(l|d)*",                                      STRING},
+            {"( +|-|ε ) dd*(.dd* | ε)( e ( +|-|ε ) dd*|ε) ", BINARY_NUMBER},
+            {"=",                                            ASSIGN},
+            {"+",                                            ADD},
+            {"-",                                            SUB},
+            {"*",                                            MULT},
+            {"/",                                            DIV},
+            {"(",                                            LEFT_PAR},
+            {")",                                            RIGHT_BLOCK},
+            {"{",                                            LEFT_BLOCK},
+            {"}",                                            RIGHT_BLOCK},
+            {",",                                            COMMA},
+            {";",                                            SEMICOLON},
+            {">",                                            GREATER},
+            {">=",                                           GREATER_EQUAL},
+            {"<",                                            SMALLER},
+            {"<=",                                           SMALLER_EQUAL},
+            {"==",                                           EQUAL},
+            {"!=",                                           NON_EQUAL},
+            {"#",                                            HASH_MARK}
     };
 }
 
@@ -421,6 +420,75 @@ void Scanner::cleanUp() {
     row = 0;
     closeFile();
     ///@todo try to use try catch to solve exception.
+}
+
+
+void Scanner::fixTokenType(Scanner::Token &rhs) {
+    switch (rhs.kind) {
+        case KEY_WORD:
+            if (rhs.lexeme == "main") {
+                rhs.kind = MAIN;
+            } else if (rhs.lexeme == "int") {
+                rhs.kind = INT;
+            } else if (rhs.lexeme == "double") {
+                rhs.kind = DOUBLE;
+            } else if (rhs.lexeme == "float") {
+                rhs.kind = FLOAT;
+            } else if (rhs.lexeme == "char") {
+                rhs.kind = CHAR;
+            } else if (rhs.lexeme == "if") {
+                rhs.kind = IF;
+            } else if (rhs.lexeme == "else") {
+                rhs.kind = ELSE;
+            } else if (rhs.lexeme == "do") {
+                rhs.kind = DO;
+            } else if (rhs.lexeme == "while") {
+                rhs.kind = WHILE;
+            } else;
+            break;
+        case SYMBOL:
+            if (rhs.lexeme == "+") {
+                rhs.kind = ADD;
+            } else if (rhs.lexeme == "-") {
+                rhs.kind = SUB;
+            } else if (rhs.lexeme == "*") {
+                rhs.kind = MULT;
+            } else if (rhs.lexeme == "/") {
+                rhs.kind = DIV;
+            } else if (rhs.lexeme == "(") {
+                rhs.kind = LEFT_PAR;
+            } else if (rhs.lexeme == ")") {
+                rhs.kind = RIGHT_PAR;
+            } else if (rhs.lexeme == "{") {
+                rhs.kind = LEFT_BLOCK;
+            } else if (rhs.lexeme == "}") {
+                rhs.kind = RIGHT_BLOCK;
+            } else if (rhs.lexeme == ",") {
+                rhs.lexeme = COMMA;
+            } else if (rhs.lexeme == ";") {
+                rhs.kind = SEMICOLON;
+            } else if (rhs.lexeme == ">") {
+                rhs.kind = GREATER;
+            } else if (rhs.lexeme == ">=") {
+                rhs.kind = GREATER_EQUAL;
+            } else if (rhs.lexeme == "<") {
+                rhs.kind = SMALLER;
+            } else if (rhs.lexeme == "<=") {
+                rhs.kind = SMALLER_EQUAL;
+            } else if (rhs.lexeme == "==") {
+                rhs.kind = EQUAL;
+            } else if (rhs.lexeme == "=") {
+                rhs.kind = ASSIGN;
+            } else if (rhs.lexeme == "!=") {
+                rhs.kind = NON_EQUAL;
+            } else if (rhs.lexeme == "#") {
+                rhs.kind = HASH_MARK;
+            }
+            break;
+        default:
+            break;
+    }
+
 }
 
 
