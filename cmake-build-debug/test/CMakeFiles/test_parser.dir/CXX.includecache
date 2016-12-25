@@ -22,6 +22,20 @@ iostream
 Scanner.h
 /Users/wangruoxuan/ClionProjects/complier/src/Scanner.h
 
+/Users/wangruoxuan/ClionProjects/complier/src/InterCode.h
+iostream
+-
+fstream
+-
+vector
+-
+string
+-
+forward_list
+-
+AST.h
+/Users/wangruoxuan/ClionProjects/complier/src/AST.h
+
 /Users/wangruoxuan/ClionProjects/complier/src/Parser.h
 AST.h
 /Users/wangruoxuan/ClionProjects/complier/src/AST.h
@@ -327,4 +341,6 @@ catch.hpp
 /Users/wangruoxuan/ClionProjects/complier/src/Util.h
 ../../src/RecDesParser.h
 /Users/wangruoxuan/ClionProjects/complier/src/RecDesParser.h
+../../src/InterCode.h
+/Users/wangruoxuan/ClionProjects/complier/src/InterCode.h
 

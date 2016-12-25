@@ -30,6 +30,24 @@ iostream
 Scanner.h
 /Users/wangruoxuan/ClionProjects/complier/src/Scanner.h
 
+/Users/wangruoxuan/ClionProjects/complier/src/InterCode.cpp
+InterCode.h
+/Users/wangruoxuan/ClionProjects/complier/src/InterCode.h
+
+/Users/wangruoxuan/ClionProjects/complier/src/InterCode.h
+iostream
+-
+fstream
+-
+vector
+-
+string
+-
+forward_list
+-
+AST.h
+/Users/wangruoxuan/ClionProjects/complier/src/AST.h
+
 /Users/wangruoxuan/ClionProjects/complier/src/Parser.cpp
 Parser.h
 /Users/wangruoxuan/ClionProjects/complier/src/Parser.h
@@ -99,4 +117,10 @@ Symbol.h
 /Users/wangruoxuan/ClionProjects/complier/src/Symbol.h
 
 /Users/wangruoxuan/ClionProjects/complier/src/Symbol.h
+
+/Users/wangruoxuan/ClionProjects/complier/src/SymbolTable.cpp
+SymbolTable.h
+/Users/wangruoxuan/ClionProjects/complier/src/SymbolTable.h
+
+/Users/wangruoxuan/ClionProjects/complier/src/SymbolTable.h
 

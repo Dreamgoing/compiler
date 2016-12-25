@@ -8,6 +8,7 @@
 
 /**
  * @brief Symbol class's one Symbol's type is terminal symbol, other's is non-terminal.
+ * @note this class used in predictive parse.
  * */
 //#define DECLARE_SYMBOL(name, index) \
 

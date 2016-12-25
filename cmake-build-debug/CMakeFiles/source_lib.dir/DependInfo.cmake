@@ -6,10 +6,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/wangruoxuan/ClionProjects/complier/src/AST.cpp" "/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles/source_lib.dir/src/AST.cpp.o"
   "/Users/wangruoxuan/ClionProjects/complier/src/Error.cpp" "/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles/source_lib.dir/src/Error.cpp.o"
+  "/Users/wangruoxuan/ClionProjects/complier/src/InterCode.cpp" "/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles/source_lib.dir/src/InterCode.cpp.o"
   "/Users/wangruoxuan/ClionProjects/complier/src/Parser.cpp" "/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles/source_lib.dir/src/Parser.cpp.o"
   "/Users/wangruoxuan/ClionProjects/complier/src/RecDesParser.cpp" "/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles/source_lib.dir/src/RecDesParser.cpp.o"
   "/Users/wangruoxuan/ClionProjects/complier/src/Scanner.cpp" "/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles/source_lib.dir/src/Scanner.cpp.o"
   "/Users/wangruoxuan/ClionProjects/complier/src/Symbol.cpp" "/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles/source_lib.dir/src/Symbol.cpp.o"
+  "/Users/wangruoxuan/ClionProjects/complier/src/SymbolTable.cpp" "/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

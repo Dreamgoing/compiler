@@ -10,6 +10,12 @@ CMakeFiles/source_lib.dir/src/Error.cpp.o
  /Users/wangruoxuan/ClionProjects/complier/src/Error.cpp
  /Users/wangruoxuan/ClionProjects/complier/src/Error.h
  /Users/wangruoxuan/ClionProjects/complier/src/Scanner.h
+CMakeFiles/source_lib.dir/src/InterCode.cpp.o
+ /Users/wangruoxuan/ClionProjects/complier/src/AST.h
+ /Users/wangruoxuan/ClionProjects/complier/src/Error.h
+ /Users/wangruoxuan/ClionProjects/complier/src/InterCode.cpp
+ /Users/wangruoxuan/ClionProjects/complier/src/InterCode.h
+ /Users/wangruoxuan/ClionProjects/complier/src/Scanner.h
 CMakeFiles/source_lib.dir/src/Parser.cpp.o
  /Users/wangruoxuan/ClionProjects/complier/src/AST.h
  /Users/wangruoxuan/ClionProjects/complier/src/Error.h
@@ -32,3 +38,6 @@ CMakeFiles/source_lib.dir/src/Scanner.cpp.o
 CMakeFiles/source_lib.dir/src/Symbol.cpp.o
  /Users/wangruoxuan/ClionProjects/complier/src/Symbol.cpp
  /Users/wangruoxuan/ClionProjects/complier/src/Symbol.h
+CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o
+ /Users/wangruoxuan/ClionProjects/complier/src/SymbolTable.cpp
+ /Users/wangruoxuan/ClionProjects/complier/src/SymbolTable.h

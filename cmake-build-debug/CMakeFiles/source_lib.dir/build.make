@@ -201,6 +201,54 @@ CMakeFiles/source_lib.dir/src/RecDesParser.cpp.o.provides: CMakeFiles/source_lib
 CMakeFiles/source_lib.dir/src/RecDesParser.cpp.o.provides.build: CMakeFiles/source_lib.dir/src/RecDesParser.cpp.o
 
 
+CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o: CMakeFiles/source_lib.dir/flags.make
+CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o: ../src/SymbolTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o -c /Users/wangruoxuan/ClionProjects/complier/src/SymbolTable.cpp
+
+CMakeFiles/source_lib.dir/src/SymbolTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/source_lib.dir/src/SymbolTable.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangruoxuan/ClionProjects/complier/src/SymbolTable.cpp > CMakeFiles/source_lib.dir/src/SymbolTable.cpp.i
+
+CMakeFiles/source_lib.dir/src/SymbolTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/source_lib.dir/src/SymbolTable.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangruoxuan/ClionProjects/complier/src/SymbolTable.cpp -o CMakeFiles/source_lib.dir/src/SymbolTable.cpp.s
+
+CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o.requires:
+
+.PHONY : CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o.requires
+
+CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o.provides: CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o.requires
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o.provides.build
+.PHONY : CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o.provides
+
+CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o.provides.build: CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o
+
+
+CMakeFiles/source_lib.dir/src/InterCode.cpp.o: CMakeFiles/source_lib.dir/flags.make
+CMakeFiles/source_lib.dir/src/InterCode.cpp.o: ../src/InterCode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/source_lib.dir/src/InterCode.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/source_lib.dir/src/InterCode.cpp.o -c /Users/wangruoxuan/ClionProjects/complier/src/InterCode.cpp
+
+CMakeFiles/source_lib.dir/src/InterCode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/source_lib.dir/src/InterCode.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangruoxuan/ClionProjects/complier/src/InterCode.cpp > CMakeFiles/source_lib.dir/src/InterCode.cpp.i
+
+CMakeFiles/source_lib.dir/src/InterCode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/source_lib.dir/src/InterCode.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangruoxuan/ClionProjects/complier/src/InterCode.cpp -o CMakeFiles/source_lib.dir/src/InterCode.cpp.s
+
+CMakeFiles/source_lib.dir/src/InterCode.cpp.o.requires:
+
+.PHONY : CMakeFiles/source_lib.dir/src/InterCode.cpp.o.requires
+
+CMakeFiles/source_lib.dir/src/InterCode.cpp.o.provides: CMakeFiles/source_lib.dir/src/InterCode.cpp.o.requires
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/InterCode.cpp.o.provides.build
+.PHONY : CMakeFiles/source_lib.dir/src/InterCode.cpp.o.provides
+
+CMakeFiles/source_lib.dir/src/InterCode.cpp.o.provides.build: CMakeFiles/source_lib.dir/src/InterCode.cpp.o
+
+
 # Object files for target source_lib
 source_lib_OBJECTS = \
 "CMakeFiles/source_lib.dir/src/Scanner.cpp.o" \
@@ -208,7 +256,9 @@ source_lib_OBJECTS = \
 "CMakeFiles/source_lib.dir/src/AST.cpp.o" \
 "CMakeFiles/source_lib.dir/src/Parser.cpp.o" \
 "CMakeFiles/source_lib.dir/src/Symbol.cpp.o" \
-"CMakeFiles/source_lib.dir/src/RecDesParser.cpp.o"
+"CMakeFiles/source_lib.dir/src/RecDesParser.cpp.o" \
+"CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o" \
+"CMakeFiles/source_lib.dir/src/InterCode.cpp.o"
 
 # External object files for target source_lib
 source_lib_EXTERNAL_OBJECTS =
@@ -219,9 +269,11 @@ libsource_lib.a: CMakeFiles/source_lib.dir/src/AST.cpp.o
 libsource_lib.a: CMakeFiles/source_lib.dir/src/Parser.cpp.o
 libsource_lib.a: CMakeFiles/source_lib.dir/src/Symbol.cpp.o
 libsource_lib.a: CMakeFiles/source_lib.dir/src/RecDesParser.cpp.o
+libsource_lib.a: CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o
+libsource_lib.a: CMakeFiles/source_lib.dir/src/InterCode.cpp.o
 libsource_lib.a: CMakeFiles/source_lib.dir/build.make
 libsource_lib.a: CMakeFiles/source_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libsource_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libsource_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/source_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/source_lib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -236,6 +288,8 @@ CMakeFiles/source_lib.dir/requires: CMakeFiles/source_lib.dir/src/AST.cpp.o.requ
 CMakeFiles/source_lib.dir/requires: CMakeFiles/source_lib.dir/src/Parser.cpp.o.requires
 CMakeFiles/source_lib.dir/requires: CMakeFiles/source_lib.dir/src/Symbol.cpp.o.requires
 CMakeFiles/source_lib.dir/requires: CMakeFiles/source_lib.dir/src/RecDesParser.cpp.o.requires
+CMakeFiles/source_lib.dir/requires: CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o.requires
+CMakeFiles/source_lib.dir/requires: CMakeFiles/source_lib.dir/src/InterCode.cpp.o.requires
 
 .PHONY : CMakeFiles/source_lib.dir/requires
 

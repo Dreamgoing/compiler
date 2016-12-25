@@ -4,6 +4,7 @@
 test/CMakeFiles/test_parser.dir/src/test_parser.cpp.o
  /Users/wangruoxuan/ClionProjects/complier/src/AST.h
  /Users/wangruoxuan/ClionProjects/complier/src/Error.h
+ /Users/wangruoxuan/ClionProjects/complier/src/InterCode.h
  /Users/wangruoxuan/ClionProjects/complier/src/Parser.h
  /Users/wangruoxuan/ClionProjects/complier/src/RecDesParser.h
  /Users/wangruoxuan/ClionProjects/complier/src/Scanner.h

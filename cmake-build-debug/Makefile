@@ -200,6 +200,19 @@ scanner_lib/fast:
 .PHONY : scanner_lib/fast
 
 #=============================================================================
+# Target rules for targets named test_intercode
+
+# Build rule for target.
+test_intercode: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_intercode
+.PHONY : test_intercode
+
+# fast build rule for target.
+test_intercode/fast:
+	$(MAKE) -f test/CMakeFiles/test_intercode.dir/build.make test/CMakeFiles/test_intercode.dir/build
+.PHONY : test_intercode/fast
+
+#=============================================================================
 # Target rules for targets named test_parser
 
 # Build rule for target.
@@ -284,6 +297,33 @@ src/Error.cpp.s:
 	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/Error.cpp.s
 	$(MAKE) -f CMakeFiles/scanner_lib.dir/build.make CMakeFiles/scanner_lib.dir/src/Error.cpp.s
 .PHONY : src/Error.cpp.s
+
+src/InterCode.o: src/InterCode.cpp.o
+
+.PHONY : src/InterCode.o
+
+# target to build an object file
+src/InterCode.cpp.o:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/InterCode.cpp.o
+.PHONY : src/InterCode.cpp.o
+
+src/InterCode.i: src/InterCode.cpp.i
+
+.PHONY : src/InterCode.i
+
+# target to preprocess a source file
+src/InterCode.cpp.i:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/InterCode.cpp.i
+.PHONY : src/InterCode.cpp.i
+
+src/InterCode.s: src/InterCode.cpp.s
+
+.PHONY : src/InterCode.s
+
+# target to generate assembly for a file
+src/InterCode.cpp.s:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/InterCode.cpp.s
+.PHONY : src/InterCode.cpp.s
 
 src/Parser.o: src/Parser.cpp.o
 
@@ -408,6 +448,33 @@ src/Symbol.cpp.s:
 	$(MAKE) -f CMakeFiles/symbol_lib.dir/build.make CMakeFiles/symbol_lib.dir/src/Symbol.cpp.s
 .PHONY : src/Symbol.cpp.s
 
+src/SymbolTable.o: src/SymbolTable.cpp.o
+
+.PHONY : src/SymbolTable.o
+
+# target to build an object file
+src/SymbolTable.cpp.o:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o
+.PHONY : src/SymbolTable.cpp.o
+
+src/SymbolTable.i: src/SymbolTable.cpp.i
+
+.PHONY : src/SymbolTable.i
+
+# target to preprocess a source file
+src/SymbolTable.cpp.i:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/SymbolTable.cpp.i
+.PHONY : src/SymbolTable.cpp.i
+
+src/SymbolTable.s: src/SymbolTable.cpp.s
+
+.PHONY : src/SymbolTable.s
+
+# target to generate assembly for a file
+src/SymbolTable.cpp.s:
+	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/src/SymbolTable.cpp.s
+.PHONY : src/SymbolTable.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -423,6 +490,7 @@ help:
 	@echo "... ast_lib"
 	@echo "... test"
 	@echo "... scanner_lib"
+	@echo "... test_intercode"
 	@echo "... test_parser"
 	@echo "... test_scanner"
 	@echo "... src/AST.o"
@@ -431,6 +499,9 @@ help:
 	@echo "... src/Error.o"
 	@echo "... src/Error.i"
 	@echo "... src/Error.s"
+	@echo "... src/InterCode.o"
+	@echo "... src/InterCode.i"
+	@echo "... src/InterCode.s"
 	@echo "... src/Parser.o"
 	@echo "... src/Parser.i"
 	@echo "... src/Parser.s"
@@ -443,6 +514,9 @@ help:
 	@echo "... src/Symbol.o"
 	@echo "... src/Symbol.i"
 	@echo "... src/Symbol.s"
+	@echo "... src/SymbolTable.o"
+	@echo "... src/SymbolTable.i"
+	@echo "... src/SymbolTable.s"
 .PHONY : help
 
 

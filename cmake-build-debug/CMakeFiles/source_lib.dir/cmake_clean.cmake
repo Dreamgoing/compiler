@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/source_lib.dir/src/Parser.cpp.o"
   "CMakeFiles/source_lib.dir/src/Symbol.cpp.o"
   "CMakeFiles/source_lib.dir/src/RecDesParser.cpp.o"
+  "CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o"
+  "CMakeFiles/source_lib.dir/src/InterCode.cpp.o"
   "libsource_lib.pdb"
   "libsource_lib.a"
 )

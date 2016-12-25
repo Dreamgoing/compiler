@@ -51,6 +51,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/parser_lib.dir/DependInfo.cmake"
   "CMakeFiles/ast_lib.dir/DependInfo.cmake"
   "CMakeFiles/scanner_lib.dir/DependInfo.cmake"
+  "test/CMakeFiles/test_intercode.dir/DependInfo.cmake"
   "test/CMakeFiles/test_parser.dir/DependInfo.cmake"
   "test/CMakeFiles/test_scanner.dir/DependInfo.cmake"
   )

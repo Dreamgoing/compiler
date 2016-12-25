@@ -11,13 +11,13 @@
 #include "../../src/Symbol.h"
 #include "../../src/Util.h"
 #include "../../src/RecDesParser.h"
+#include "../../src/InterCode.h"
 /**
  * @brief Parser Unit_test source
  * @todo + Naming conventions
  *       + more strong
  *
  * */
-
 
 
 TEST_CASE("Parser test","[Parser]"){
@@ -85,7 +85,6 @@ TEST_CASE("Parser test","[Parser]"){
 //        RecDesParser::recusiveDescentParse(parser);
 //
         //parser.getAst_().showAST();
-
 
     }
 }

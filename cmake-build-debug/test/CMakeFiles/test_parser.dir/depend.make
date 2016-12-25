@@ -3,6 +3,7 @@
 
 test/CMakeFiles/test_parser.dir/src/test_parser.cpp.o: ../src/AST.h
 test/CMakeFiles/test_parser.dir/src/test_parser.cpp.o: ../src/Error.h
+test/CMakeFiles/test_parser.dir/src/test_parser.cpp.o: ../src/InterCode.h
 test/CMakeFiles/test_parser.dir/src/test_parser.cpp.o: ../src/Parser.h
 test/CMakeFiles/test_parser.dir/src/test_parser.cpp.o: ../src/RecDesParser.h
 test/CMakeFiles/test_parser.dir/src/test_parser.cpp.o: ../src/Scanner.h

@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug
 CMakeFiles/source_lib.dir/all:
 	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/depend
 	$(MAKE) -f CMakeFiles/source_lib.dir/build.make CMakeFiles/source_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=11,12,13,14,15,16,17 "Built target source_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19 "Built target source_lib"
 .PHONY : CMakeFiles/source_lib.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/source_lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/source_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/source_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/source_lib.dir/rule
@@ -140,7 +140,7 @@ clean: CMakeFiles/resdesparser_lib.dir/clean
 CMakeFiles/symbol_lib.dir/all:
 	$(MAKE) -f CMakeFiles/symbol_lib.dir/build.make CMakeFiles/symbol_lib.dir/depend
 	$(MAKE) -f CMakeFiles/symbol_lib.dir/build.make CMakeFiles/symbol_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=18,19 "Built target symbol_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target symbol_lib"
 .PHONY : CMakeFiles/symbol_lib.dir/all
 
 # Include target in all.
@@ -285,12 +285,14 @@ clean: CMakeFiles/scanner_lib.dir/clean
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
+test/all: test/CMakeFiles/test_intercode.dir/all
 test/all: test/CMakeFiles/test_parser.dir/all
 test/all: test/CMakeFiles/test_scanner.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
+test/clean: test/CMakeFiles/test_intercode.dir/clean
 test/clean: test/CMakeFiles/test_parser.dir/clean
 test/clean: test/CMakeFiles/test_scanner.dir/clean
 
@@ -302,13 +304,50 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
+# Target rules for target test/CMakeFiles/test_intercode.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_intercode.dir/all: CMakeFiles/source_lib.dir/all
+	$(MAKE) -f test/CMakeFiles/test_intercode.dir/build.make test/CMakeFiles/test_intercode.dir/depend
+	$(MAKE) -f test/CMakeFiles/test_intercode.dir/build.make test/CMakeFiles/test_intercode.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=22,23 "Built target test_intercode"
+.PHONY : test/CMakeFiles/test_intercode.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/test_intercode.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_intercode.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_intercode.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_intercode.dir/rule
+
+# Convenience name for target.
+test_intercode: test/CMakeFiles/test_intercode.dir/rule
+
+.PHONY : test_intercode
+
+# clean rule for target.
+test/CMakeFiles/test_intercode.dir/clean:
+	$(MAKE) -f test/CMakeFiles/test_intercode.dir/build.make test/CMakeFiles/test_intercode.dir/clean
+.PHONY : test/CMakeFiles/test_intercode.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/test_intercode.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/test_parser.dir
 
 # All Build rule for target.
 test/CMakeFiles/test_parser.dir/all: CMakeFiles/source_lib.dir/all
 	$(MAKE) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/depend
 	$(MAKE) -f test/CMakeFiles/test_parser.dir/build.make test/CMakeFiles/test_parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target test_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=24,25 "Built target test_parser"
 .PHONY : test/CMakeFiles/test_parser.dir/all
 
 # Include target in all.
@@ -318,7 +357,7 @@ all: test/CMakeFiles/test_parser.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_parser.dir/rule
@@ -345,7 +384,7 @@ clean: test/CMakeFiles/test_parser.dir/clean
 test/CMakeFiles/test_scanner.dir/all: CMakeFiles/scanner_lib.dir/all
 	$(MAKE) -f test/CMakeFiles/test_scanner.dir/build.make test/CMakeFiles/test_scanner.dir/depend
 	$(MAKE) -f test/CMakeFiles/test_scanner.dir/build.make test/CMakeFiles/test_scanner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=22,23 "Built target test_scanner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/CMakeFiles --progress-num=26,27 "Built target test_scanner"
 .PHONY : test/CMakeFiles/test_scanner.dir/all
 
 # Include target in all.

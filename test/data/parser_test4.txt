@@ -1,4 +1,4 @@
 main(){
- a = b+c;
+ a = b+c-d;
  hello = ok+ab*5;
 }

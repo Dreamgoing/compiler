@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -88,6 +77,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,6 +122,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/test_intercode.dir/rule:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_intercode.dir/rule
+.PHONY : test/CMakeFiles/test_intercode.dir/rule
+
+# Convenience name for target.
+test_intercode: test/CMakeFiles/test_intercode.dir/rule
+
+.PHONY : test_intercode
+
+# fast build rule for target.
+test_intercode/fast:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_intercode.dir/build.make test/CMakeFiles/test_intercode.dir/build
+.PHONY : test_intercode/fast
+
+# Convenience name for target.
 test/CMakeFiles/test_parser.dir/rule:
 	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_parser.dir/rule
 .PHONY : test/CMakeFiles/test_parser.dir/rule
@@ -150,6 +165,33 @@ test_scanner: test/CMakeFiles/test_scanner.dir/rule
 test_scanner/fast:
 	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_scanner.dir/build.make test/CMakeFiles/test_scanner.dir/build
 .PHONY : test_scanner/fast
+
+src/test_intercode.o: src/test_intercode.cpp.o
+
+.PHONY : src/test_intercode.o
+
+# target to build an object file
+src/test_intercode.cpp.o:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_intercode.dir/build.make test/CMakeFiles/test_intercode.dir/src/test_intercode.cpp.o
+.PHONY : src/test_intercode.cpp.o
+
+src/test_intercode.i: src/test_intercode.cpp.i
+
+.PHONY : src/test_intercode.i
+
+# target to preprocess a source file
+src/test_intercode.cpp.i:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_intercode.dir/build.make test/CMakeFiles/test_intercode.dir/src/test_intercode.cpp.i
+.PHONY : src/test_intercode.cpp.i
+
+src/test_intercode.s: src/test_intercode.cpp.s
+
+.PHONY : src/test_intercode.s
+
+# target to generate assembly for a file
+src/test_intercode.cpp.s:
+	cd /Users/wangruoxuan/ClionProjects/complier/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_intercode.dir/build.make test/CMakeFiles/test_intercode.dir/src/test_intercode.cpp.s
+.PHONY : src/test_intercode.cpp.s
 
 src/test_parser.o: src/test_parser.cpp.o
 
@@ -211,11 +253,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test_intercode"
 	@echo "... test_parser"
+	@echo "... test"
 	@echo "... test_scanner"
+	@echo "... src/test_intercode.o"
+	@echo "... src/test_intercode.i"
+	@echo "... src/test_intercode.s"
 	@echo "... src/test_parser.o"
 	@echo "... src/test_parser.i"
 	@echo "... src/test_parser.s"

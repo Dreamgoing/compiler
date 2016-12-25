@@ -10,6 +10,12 @@ CMakeFiles/source_lib.dir/src/Error.cpp.o: ../src/Error.cpp
 CMakeFiles/source_lib.dir/src/Error.cpp.o: ../src/Error.h
 CMakeFiles/source_lib.dir/src/Error.cpp.o: ../src/Scanner.h
 
+CMakeFiles/source_lib.dir/src/InterCode.cpp.o: ../src/AST.h
+CMakeFiles/source_lib.dir/src/InterCode.cpp.o: ../src/Error.h
+CMakeFiles/source_lib.dir/src/InterCode.cpp.o: ../src/InterCode.cpp
+CMakeFiles/source_lib.dir/src/InterCode.cpp.o: ../src/InterCode.h
+CMakeFiles/source_lib.dir/src/InterCode.cpp.o: ../src/Scanner.h
+
 CMakeFiles/source_lib.dir/src/Parser.cpp.o: ../src/AST.h
 CMakeFiles/source_lib.dir/src/Parser.cpp.o: ../src/Error.h
 CMakeFiles/source_lib.dir/src/Parser.cpp.o: ../src/Parser.cpp
@@ -31,4 +37,7 @@ CMakeFiles/source_lib.dir/src/Scanner.cpp.o: ../src/Scanner.h
 
 CMakeFiles/source_lib.dir/src/Symbol.cpp.o: ../src/Symbol.cpp
 CMakeFiles/source_lib.dir/src/Symbol.cpp.o: ../src/Symbol.h
+
+CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o: ../src/SymbolTable.cpp
+CMakeFiles/source_lib.dir/src/SymbolTable.cpp.o: ../src/SymbolTable.h
 

@@ -49,7 +49,9 @@ set(SOURCE_FILES
         src/AST.h src/AST.cpp
         src/Parser.h src/Parser.cpp
         src/Symbol.h src/Symbol.cpp
-        src/RecDesParser.h src/RecDesParser.cpp)
+        src/RecDesParser.h src/RecDesParser.cpp
+        src/SymbolTable.h src/SymbolTable.cpp
+        src/InterCode.h src/InterCode.cpp)
 add_library(${SOURCE_LIB} ${SOURCE_FILES})
 
 if (BuildTests)
