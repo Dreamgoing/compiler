@@ -1,0 +1,12 @@
+if(a>b){
+ abd = b+d;
+c = e*f;
+}else{
+ ok = (a+b)*2/3;
+ if(c==d){
+   k = a/3+hello;
+ }else{
+   c = d;
+   e1 = e2+e3/e4;
+ }
+} 

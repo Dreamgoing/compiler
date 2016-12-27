@@ -38,6 +38,8 @@ public:
 
     TreeNode *do_whileStatement();
 
+    TreeNode *whileStatement();
+
     TreeNode *parCondition();
 
     TreeNode *elseStatement();

@@ -84,6 +84,7 @@ public:
         STATEMENT_BLOCK,
         ASSIGN_STATEMENT,
         DO_WHILE_STATEMENT,
+        WHILE_STATEMENT,
         IF_CONDITION,
         ELSE_STATEMENT,
         TERM,

@@ -45,7 +45,7 @@ TreeNode *RecDesParser::progress() {
 
     ///set the node type.
     Scanner::Token token = this->nextToken();
-    cout<<token.lexeme<<token.kind<<endl;
+//    cout<<token.lexeme<<token.kind<<endl;
     if (token.kind != Scanner::TokenType::MAIN) {
         ///solve the syntax error.
         Error::exceptSyntax(token.lexeme, "main");
@@ -76,8 +76,14 @@ TreeNode *RecDesParser::statementBlock() {
         ///ensure the syntax correct.
         node->kind = nodeType::STATEMENT_BLOCK;
         node->addChild(statements());
+
+//        {
+//            cout<<"** "<<this->nextToken().lexeme<<endl;
+//            rollbackToken();
+//        }
         if (this->nextToken().kind != tokenType::RIGHT_BLOCK) {
             ///right parenthesis missing
+            cerr<<token.row<<" row"<<endl;
             Error::exceptSyntax("missing right block", "}");
         }
     }
@@ -96,6 +102,9 @@ TreeNode *RecDesParser::statements() {
             node->addChild(child);
             //child = nullptr;
             if (this->nextToken().kind != tokenType::SEMICOLON) {
+
+                cerr<<this->nextToken().row<<" row"<<endl;
+                rollbackToken();
                 Error::exceptSyntax("missing semicolon ';' ", " symbol ';' ");
             }
         }
@@ -125,9 +134,13 @@ TreeNode *RecDesParser::statement() {
     } else if (token.kind == tokenType::IF) {
         node = selectionStatement();
         node->kind = nodeType::SELECTION_STATEMENT;
-    } else {
+    } else if(token.kind == tokenType::WHILE){
+        node = whileStatement();
+        node->kind = nodeType::WHILE_STATEMENT;
+    } else{
+        //        cout<<token.lexeme<<endl;
 
-        Error::syntaxError("empty statement!");
+//        Error::syntaxError("empty statement!");
     }
     return node;
 }
@@ -160,7 +173,7 @@ TreeNode *RecDesParser::loopStatement() {
     if (token.kind == tokenType::DO) {
         node = do_whileStatement();
     } else if (token.kind == tokenType::WHILE) {
-//        node = whileStatement();
+        node = whileStatement();
     } else if (/*(token.kind==tokenType::FOR*/true) {
 //        node = forStatement();
     } else {
@@ -186,7 +199,22 @@ TreeNode *RecDesParser::do_whileStatement() {
     } else {
         Error::syntaxError("empty do_whileStatement");
     }
-    return nullptr;
+    return node;
+}
+
+///@brief whileStatement ::= while ( <condition> ) <statementBlock>
+TreeNode *RecDesParser::whileStatement() {
+    TreeNode *node;
+    if(nextToken().kind==tokenType::WHILE){
+        node = new TreeNode;
+        node->kind = nodeType::WHILE_STATEMENT;
+        node->addChild(parCondition());
+        node->addChild(statementBlock());
+    } else{
+        rollbackToken();
+        Error::exceptSyntax("missing key_word ","while");
+    }
+    return node;
 }
 
 ///@brief selectionStatement ::= if ( <condition> ) <statementBlock> [else <statementBlock>]
@@ -195,7 +223,9 @@ TreeNode *RecDesParser::selectionStatement() {
 
     node->kind = nodeType::SELECTION_STATEMENT;
     if (nextToken().kind == tokenType::IF) {
+        //cout<<"if"<<endl;
         node->addChild(parCondition());
+
         node->addChild(statementBlock());
     } else {
         rollbackToken();
@@ -376,6 +406,7 @@ TreeNode *RecDesParser::relationalOp() {
     }
     return node;
 }
+
 
 
 

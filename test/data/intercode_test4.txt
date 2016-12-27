@@ -1,0 +1,5 @@
+while(i<=100){
+  i = i+1;
+  hello = ok+hello;
+  a = 3.14e18++12;
+}
