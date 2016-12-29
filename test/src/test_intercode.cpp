@@ -20,8 +20,8 @@
  *
  */
 
-TEST_CASE("InterCode test","[InterCode]"){
-    SECTION("interCode example test_1"){
+TEST_CASE("InterCode test", "[InterCode]") {
+    SECTION("interCode example test_1") {
         WARN("test expression");
         RecDesParser parser;
         InterCode interCode;
@@ -31,7 +31,7 @@ TEST_CASE("InterCode test","[InterCode]"){
         interCode.genAssignment(parser.ast.getRoot());
         interCode.showQuaternionList();
     }
-    SECTION("interCode example test_2"){
+    SECTION("interCode example test_2") {
         WARN("test condition");
         RecDesParser parser;
         InterCode interCode;
@@ -40,22 +40,22 @@ TEST_CASE("InterCode test","[InterCode]"){
         parser.ast.DFSshowAST();
         interCode.genCondition(parser.ast.getRoot());
     }
-    SECTION("interCode example test_3"){
+    SECTION("interCode example test_3") {
         WARN("test selectionStatement");
         RecDesParser parser;
         InterCode interCode;
-        assert(Quaternion::tolNum==0);
+        assert(Quaternion::tolNum == 0);
         parser.setSourcefile("../../test/data/intercode_test3.txt");
         parser.ast.setRoot(parser.selectionStatement());
         parser.ast.DFSshowAST();
         interCode.genSelectionStatement(parser.ast.getRoot());
         interCode.showQuaternionList();
     }
-    SECTION("interCode example test_4"){
+    SECTION("interCode example test_4") {
         WARN("test loopStatement");
         RecDesParser parser;
         InterCode interCode;
-        assert(Quaternion::tolNum==0);
+        assert(Quaternion::tolNum == 0);
         parser.setSourcefile("../../test/data/intercode_test4.txt");
         parser.ast.setRoot(parser.whileStatement());
         parser.ast.DFSshowAST();
@@ -63,11 +63,11 @@ TEST_CASE("InterCode test","[InterCode]"){
         interCode.showQuaternionList();
 
     }
-    SECTION("interCode example test_5"){
+    SECTION("interCode example test_5") {
         WARN("final test");
         RecDesParser parser;
         InterCode interCode;
-        assert(Quaternion::tolNum==0);
+        assert(Quaternion::tolNum == 0);
         parser.setSourcefile("../../test/data/intercode_test5.txt");
         parser.ast.setRoot(parser.progress());
         parser.ast.DFSshowAST();

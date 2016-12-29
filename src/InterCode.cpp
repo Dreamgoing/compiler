@@ -28,7 +28,7 @@ void Quaternion::setIndex_(int index_) {
 
 ///@brief Expression intermediate Code.
 InterCode::E_place InterCode::genExpression(TreeNode *node) {
-    if(node== nullptr||node->getChildren_().empty()){
+    if (node == nullptr || node->getChildren_().empty()) {
         return "none";
     }
     E_place e1;
@@ -36,26 +36,28 @@ InterCode::E_place InterCode::genExpression(TreeNode *node) {
     string res;
 
     ///@note auto pointer don't support inc_op "++".otherwise it will lead to memory error.
-    for(int i = 0;i<node->getChildren_().size();i++){
+    for (int i = 0; i < node->getChildren_().size(); i++) {
 
-        if(i==0){
+        if (i == 0) {
             e1 = genTerm(node->getChildren_()[0]);
             res = e1;
-        } else{
-            TreeNode* it = node->getChildren_()[i];
-            if(it->kind==nodeType::ADD||it->kind==nodeType::SUB){
-                string tmpOp = it->kind==nodeType::ADD? "+" :"-";
+        } else {
+            TreeNode *it = node->getChildren_()[i];
+            if (it->kind == nodeType::ADD || it->kind == nodeType::SUB) {
+                string tmpOp = it->kind == nodeType::ADD ? "+" : "-";
                 i++;
                 e2 = genTerm(node->getChildren_()[i]);
 
                 res = newTemp();
 //                cerr<<"res "<<res<<endl;
 
-                emit(Quaternion(tmpOp,e1,e2,res));
+                emit(Quaternion(tmpOp, e1, e2, res));
+//                cout<<quaternionList_.back().toString()<<endl;
                 e1 = res;
             }
         }
     }
+//    cout<<res<<"res"<<endl;
     return res;
 
 }
@@ -71,7 +73,7 @@ void InterCode::emit(const Quaternion &quaternion) {
 }
 
 InterCode::T_place InterCode::genTerm(TreeNode *node) {
-    if(node== nullptr||node->getChildren_().empty()){
+    if (node == nullptr || node->getChildren_().empty()) {
         return "none";
     }
     T_place t1;
@@ -80,19 +82,19 @@ InterCode::T_place InterCode::genTerm(TreeNode *node) {
 //    node->showNode();
 //    cout<<node->token.lexeme<<endl;
 //     cerr<<node->kind<<" " <<node->getChildren_().size()<<endl;
-    for(int i = 0;i<node->getChildren_().size();i++){
-        if(i==0){
+    for (int i = 0; i < node->getChildren_().size(); i++) {
+        if (i == 0) {
             t1 = genFactor(node->getChildren_()[0]);
-            res= t1;
-        } else{
+            res = t1;
+        } else {
             TreeNode *it = node->getChildren_()[i];
-            if(it->kind==nodeType::MULT||it->kind==nodeType::DIV){
-                string tmpOp = it->kind==nodeType::MULT?"*":"/";
+            if (it->kind == nodeType::MULT || it->kind == nodeType::DIV) {
+                string tmpOp = it->kind == nodeType::MULT ? "*" : "/";
                 i++;
-                TreeNode* next = node->getChildren_()[i];
+                TreeNode *next = node->getChildren_()[i];
                 t2 = genFactor(next);
                 res = newTemp();
-                emit(Quaternion(tmpOp,t1,t2,res));
+                emit(Quaternion(tmpOp, t1, t2, res));
                 t1 = res;
             }
         }
@@ -101,18 +103,18 @@ InterCode::T_place InterCode::genTerm(TreeNode *node) {
 }
 
 InterCode::F_place InterCode::genFactor(TreeNode *node) {
-    if(node->kind==nodeType::EXPRESSION){
+    if (node->kind == nodeType::EXPRESSION) {
         return genExpression(node);
-    }else if(node->kind==nodeType::ID){
+    } else if (node->kind == nodeType::ID) {
         return node->token.lexeme;
-    } else if(node->kind==nodeType::BINARY_NUMBER){
-        if(node->token.empty()){
+    } else if (node->kind == nodeType::BINARY_NUMBER) {
+        if (node->token.empty()) {
             return "num";
-        } else{
+        } else {
             return node->token.lexeme;
         }
 
-    } else{
+    } else {
         Error::syntaxError("empty Factor!");
     }
 }
@@ -120,7 +122,7 @@ InterCode::F_place InterCode::genFactor(TreeNode *node) {
 string InterCode::newTemp() {
 
     ///push it to symbolTable.
-    return "t"+ to_string(tolTempNum++);
+    return "t" + to_string(tolTempNum++);
 }
 
 const vector<Quaternion> &InterCode::getQuaternionList_() const {
@@ -139,30 +141,39 @@ void InterCode::genAssignment(TreeNode *node) {
 
     ///@brief according to the structure of AST.
 
-    emit(Quaternion("=",genExpression(node->getChildren_()[2]),"",node->getChildren_()[0]->token.lexeme));
+    emit(Quaternion("=", genExpression(node->getChildren_()[2]), "", node->getChildren_()[0]->token.lexeme));
 }
 
 ///use pointer is smarter.
 ///@todo to support "||" and "&&" operation.
 InterCode::codeIndex InterCode::genCondition(TreeNode *node) {
-    Quaternion condition;
-    if(node->kind!=nodeType::CONDITION){
+    string arg1;
+    if (node->kind != nodeType::CONDITION) {
         Error::syntaxError("irregular condition!");
     }
-    assert(condition.row==Quaternion::tolNum);
-    condition.trueList = condition.row;
-    condition.falseList = condition.row+1;
-    condition.beginCode = condition.row;
-    condition.isCondition = true;
-    if(node->getChildren_().size()==1){
-        ///single expression
-        condition.arg1 = genExpression(node->getChildren_()[0]);
+    //assert(condition.row==Quaternion::tolNum);
 
-    } else if(node->getChildren_().size()==3){
+    if (node->getChildren_().size() == 1) {
+        ///single expression
+        arg1 = genExpression(node->getChildren_()[0]);
+
+    } else if (node->getChildren_().size() == 3) {
         ///binary expression
-        condition.arg1 = genExpression(node->getChildren_()[0])+node->getChildren_()[1]->token.lexeme+genExpression(node->getChildren_()[2]);
+        arg1 = genExpression(node->getChildren_()[0]) + node->getChildren_()[1]->token.lexeme +
+               genExpression(node->getChildren_()[2]);
+        //this->showQuaternionList();
     } else;///irregular condition.
 
+
+    ///@note ensure the correct index.
+    ///@bug fix it.
+    Quaternion condition;
+    condition.arg1 = arg1;
+    condition.trueList = Quaternion::tolNum;
+    condition.row = Quaternion::tolNum;
+    condition.falseList = condition.row + 1;
+    condition.beginCode = condition.row;
+    condition.isCondition = true;
     Quaternion gotoZero;
     gotoZero.isJump = true;
     emit(condition);
@@ -171,41 +182,41 @@ InterCode::codeIndex InterCode::genCondition(TreeNode *node) {
 }
 
 InterCode::codeIndex InterCode::genSelectionStatement(TreeNode *node) {
-    if(node->kind!=nodeType::SELECTION_STATEMENT){
+    if (node->kind != nodeType::SELECTION_STATEMENT) {
         Error::syntaxError("irregular selection_statement");
     }
     int index = genCondition(node->getChildren_()[0]);
 
     ///trueList
 //    cout<<"l"<<Quaternion::tolNum<<endl;
-    bathPatch_(index,Quaternion::tolNum+1);
+    bathPatch_(index, Quaternion::tolNum + 1);
 
     ///C_chain is the index in the list.
-    int C_chain = quaternionList_[index].falseList-1;
+    int C_chain = quaternionList_[index].falseList - 1;
     ///S1_chain is the head of list.
     int S1_chain = genStatementBlock(node->getChildren_()[1]);
-    if(node->getChildren_().size()==2){
+    if (node->getChildren_().size() == 2) {
         ///non-else statement
         ///@note a little different
         ///failList
-        merge_(C_chain,Quaternion::tolNum+1);
+        merge_(C_chain, Quaternion::tolNum + 1);
 
 
-    } else if(node->getChildren_().size()==3){
+    } else if (node->getChildren_().size() == 3) {
         int tmpFailList = Quaternion::tolNum; ///tmpQ index
         Quaternion tmpQ;
         tmpQ.isJump = true;
         emit(tmpQ);
 
         ///the same
-        bathPatch_(C_chain,Quaternion::tolNum+1);
+        bathPatch_(C_chain, Quaternion::tolNum + 1);
 
         ///S2_chain is the head of list
         int S2_chain = genStatementBlock(node->getChildren_()[2]);
 
-        int outIndex = Quaternion::tolNum+1;
-        merge_(tmpFailList,outIndex);
-    } else{
+        int outIndex = Quaternion::tolNum + 1;
+        merge_(tmpFailList, outIndex);
+    } else {
         Error::syntaxError("interCode::irregular selection statement");
     }
     return 0;
@@ -219,10 +230,10 @@ void InterCode::bathPatch_(InterCode::codeIndex index, int pos) {
 }
 
 InterCode::codeIndex InterCode::genStatementBlock(TreeNode *node) {
-    if(node->kind!=nodeType::STATEMENT_BLOCK){
+    if (node->kind != nodeType::STATEMENT_BLOCK) {
         Error::syntaxError("interCode::irregular selection statement");
     }
-    if(node->getChildren_().size()==1){
+    if (node->getChildren_().size() == 1) {
         genStatements(node->getChildren_()[0]);
     }
     return Quaternion::tolNum;
@@ -236,63 +247,64 @@ InterCode::codeIndex InterCode::merge_(InterCode::codeIndex p1, InterCode::codeI
 }
 
 void InterCode::showQuaternionList() {
-    for(auto it:quaternionList_){
+    for (auto it:quaternionList_) {
 #ifdef SHOW_ROW_NUM
-        cout<<it.row<<": ";
+        cout << it.row << ": ";
 #endif
-        cout<<it.toString()<<endl;
+        cout << it.toString() << endl;
     }
 }
 
 InterCode::codeIndex InterCode::genStatement(TreeNode *node) {
-    if(node->kind==nodeType::ASSIGN_STATEMENT){
+    if (node->kind == nodeType::ASSIGN_STATEMENT) {
         genAssignment(node);
-    }else if(node->kind==nodeType::SELECTION_STATEMENT){
+    } else if (node->kind == nodeType::SELECTION_STATEMENT) {
         genSelectionStatement(node);
-    }else if(node->kind==nodeType::DO_WHILE_STATEMENT){
+    } else if (node->kind == nodeType::DO_WHILE_STATEMENT) {
 
-    }else if(node->kind==nodeType::WHILE_STATEMENT){
+    } else if (node->kind == nodeType::WHILE_STATEMENT) {
         genWhileStatement(node);
-    }else;
+    } else;
     return 0;
 }
 
 InterCode::codeIndex InterCode::genStatements(TreeNode *node) {
-    if(node->kind!=nodeType::STATEMENTS){
+    if (node->kind != nodeType::STATEMENTS) {
         Error::syntaxError("interCode::irregular statements");
     }
-    for(auto it:node->getChildren_()){
+    for (auto it:node->getChildren_()) {
         genStatement(it);
     }
     return 0;
 }
 
 InterCode::codeIndex InterCode::genWhileStatement(TreeNode *node) {
-    if(node->kind==nodeType::WHILE_STATEMENT){
+    if (node->kind == nodeType::WHILE_STATEMENT) {
         int index = genCondition(node->getChildren_()[0]);
-        bathPatch_(index,Quaternion::tolNum+1);
-        int W_chain = quaternionList_[index].falseList-1;
+        bathPatch_(index, Quaternion::tolNum + 1);
+        int W_chain = quaternionList_[index].falseList - 1;
         int S_chain = genStatementBlock(node->getChildren_()[1]);
-        merge_(W_chain,Quaternion::tolNum+1);
+        merge_(W_chain, Quaternion::tolNum + 1);
         Quaternion tmpQ;
         tmpQ.isJump = true;
         tmpQ.assigned = true;
-        tmpQ.result = to_string(index+1);
+        tmpQ.result = to_string(index + 1);
         emit(tmpQ);
     }
     return Quaternion::tolNum;
 }
+
 InterCode::codeIndex InterCode::genDoStatement(TreeNode *node) {
     return 0;
 }
 
 void InterCode::genProgress(TreeNode *node) {
-    if(node->kind==nodeType::MAIN&&node->getChildren_().size()==1){
+    if (node->kind == nodeType::MAIN && node->getChildren_().size() == 1) {
         genStatementBlock(node->getChildren_()[0]);
-    }else{
+    } else {
         Error::syntaxError("interCode:: irregular progress");
     }
-    emit(Quaternion("","","","END"));
+    emit(Quaternion("", "", "", "END"));
 
 }
 
