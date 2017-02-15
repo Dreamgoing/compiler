@@ -8,6 +8,7 @@
 ///@todo can use c++ design pattern Strategy pattern.
 
 /**
+ * bnf syntax
  * symbol: < x >  x appear once
  *         { x }  x appear more than zero
  *         [ x ]  x appear once or not appear

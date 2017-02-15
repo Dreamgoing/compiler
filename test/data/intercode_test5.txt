@@ -1,7 +1,7 @@
 main(){
  hello = (a+b)/ccc;
  if(hello>0){
-   while(i<10+-123.5e123){
+   while(i<10+-123.5e){
      i = i*-1;
      if(i==0){
         iok = ok+i;
