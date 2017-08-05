@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="compiler"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source_lib">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libsource_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 source_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source_lib/fast">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libsource_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 source_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="resdesparser_lib">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libresdesparser_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 resdesparser_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="resdesparser_lib/fast">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libresdesparser_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 resdesparser_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="symbol_lib">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libsymbol_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 symbol_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="symbol_lib/fast">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libsymbol_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 symbol_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parser_lib">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libparser_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 parser_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parser_lib/fast">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libparser_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 parser_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ast_lib">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libast_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 ast_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ast_lib/fast">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libast_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 ast_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="scanner_lib">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libscanner_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 scanner_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="scanner_lib/fast">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/libscanner_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 scanner_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_scanner">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/test_scanner" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_scanner"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_scanner/fast">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/test_scanner" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_scanner/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_intercode">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/test_intercode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_intercode"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_intercode/fast">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/test_intercode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_intercode/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_parser">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/test_parser" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_parser"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_parser/fast">
+				<Option output="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/test_parser" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_parser/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/wangruoxuan/ClionProjects/complier/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/AST.cpp">
+			<Option target="source_lib"/>
+			<Option target="ast_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/AST.h">
+			<Option target="source_lib"/>
+			<Option target="ast_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/Error.cpp">
+			<Option target="source_lib"/>
+			<Option target="scanner_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/Error.h">
+			<Option target="source_lib"/>
+			<Option target="scanner_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/InterCode.cpp">
+			<Option target="source_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/InterCode.h">
+			<Option target="source_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/Parser.cpp">
+			<Option target="source_lib"/>
+			<Option target="parser_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/Parser.h">
+			<Option target="source_lib"/>
+			<Option target="parser_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/RecDesParser.cpp">
+			<Option target="source_lib"/>
+			<Option target="resdesparser_lib"/>
+			<Option target="parser_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/RecDesParser.h">
+			<Option target="source_lib"/>
+			<Option target="resdesparser_lib"/>
+			<Option target="parser_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/Scanner.cpp">
+			<Option target="source_lib"/>
+			<Option target="scanner_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/Scanner.h">
+			<Option target="source_lib"/>
+			<Option target="scanner_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/Symbol.cpp">
+			<Option target="source_lib"/>
+			<Option target="symbol_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/Symbol.h">
+			<Option target="source_lib"/>
+			<Option target="symbol_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/SymbolTable.cpp">
+			<Option target="source_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/SymbolTable.h">
+			<Option target="source_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/src/Util.h">
+			<Option target="resdesparser_lib"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/test/src/catch.hpp">
+			<Option target="test_scanner"/>
+			<Option target="test_intercode"/>
+			<Option target="test_parser"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/test/src/test_intercode.cpp">
+			<Option target="test_intercode"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/test/src/test_parser.cpp">
+			<Option target="test_parser"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/test/src/test_scanner.cpp">
+			<Option target="test_scanner"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/wangruoxuan/ClionProjects/complier/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
