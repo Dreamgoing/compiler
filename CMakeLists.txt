@@ -59,4 +59,4 @@ if (BuildTests)
 endif ()
 
 
-#add_executable(tet ${SOURCE_FILES})
+add_executable(compiler ${SOURCE_FILES})
